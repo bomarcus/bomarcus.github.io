@@ -300,14 +300,14 @@
     "language": "",
     "websiteUrls": [""],
     "imageUrl": "",
-    "audioUrls": [
+    "audioUrls": [],
+    "videoUrls": [
       {
         "url": "https://storage.googleapis.com/maocloud/wipeout_compressor/wipeout_hls.m3u8",
         "audioDescription": "Your description here",
         "audioMoreInfo": "More info here"
       }
-    ],
-    "videoUrls": []
+    ]
   },
   {
     "title": "About me",
