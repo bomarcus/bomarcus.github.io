@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  @apply text-gray-800 bg-red-500;
+}
+
+body.dark {
+  @apply text-white bg-gray-800;
+}
+
+.menu-item:hover {
+  @apply text-blue-500;
+}
+
+body.dark .menu-item:hover {
+  @apply  text-red-500;
+}

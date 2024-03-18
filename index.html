@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bo Barcus Boholsson</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.9/controls.min.css"
+        integrity="sha512-4RC6gy+J9tI06Vqu8sntJdArqFk86ufXyDaDIzvAp/zMTcFzC0IQiH2iWOsL1i5/2+r6igS0xxtKCJZnPL2NTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.9/shaka-player.compiled.debug.min.js"
+        integrity="sha512-C0WsjfEA5l9y+QmVK7BkSxEWGnLD4FE2qslS20ZeRq6V91ryFO8h2sq0PURIatqGPsj/4uXmOXtnlqnPSyHImg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.9/shaka-player.ui.debug.min.js"
+        integrity="sha512-9veM994T5eBzgybgFwqis2eGd+gzAYHPlYNaYnsnFxHxPw+2vbw3sQlTgLubEI4Bhs5q8b0O+MaFykG7QdykgA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/7.7.2/wavesurfer.min.js"
+        integrity="sha512-OmnWcO6MTJhqBFIF0bDSDcQg7tkchhSASlPXHeR8BLxVn6zLRU7TAWIQST1ND2vL5KfBZGV23Lc5s5WfQNFuUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class>
+    <div id="Header" class="text-center p-5">
+        <button id="dark-mode-toggle" class="text-gray-400 hover:text-gray-600">
+            <span class="material-icons-outlined" id="light-mode-icon"
+                style="display: none;">radio_button_unchecked</span>
+            <span class="material-icons-outlined" id="dark-mode-icon">dark_mode</span>
+        </button>
+        <h1 class="text-3xl font-bungee mt-5">Bo Marcus Ohlsson</h1>
+        <div class="text-xs mt-2 text-base">
+            <p>Golden Hits - Doom scrolling extravaganza.</p>
+            <p>Made with ChatGPT and GitHub Copilot.</p>
+            <p>Plus show more project info.</p>
+            <p>I have never made a homepage before.</p>
+        </div>
+        <div class="dropdown relative mt-5">
+            <button type="button"
+                class="collapsible text-lg bg-transparent border-none cursor-pointer focus:outline-none hover:text-red-500">
+                +
+            </button>
+            <div class="content transition-max-height duration-200 ease-in-out overflow-hidden max-h-0 mt-5 text-xs">
+                <p>All code written using Github Copilot and ChatGPT-4</p>
+                <p> Page is dynamically created from a
+                    json to keep a consistent format of
+                    items on the page and a
+                    central point of all information and
+                    links for the page</p>
+                <p> Page is hosted on github pages or
+                    Vercel for cost </p>
+                <p> Media is hosted and delivered from
+                    google cloud free tier </p>
+                <p> Audio is played using wavesurfer.js
+                    and waveforms are calculated on page
+                    load</p>
+                <p> Media is hls (and i added dash format
+                    for testing) according to Apple HTTP
+                    Live Streaming and
+                    MPEG-DASH
+                    standards, using ffmpeg, gpac, bento
+                    (tested some different ones), dolby
+                    mp4demux and mux for
+                    splitting mp4 when needed. Validated
+                    with apple live streaming tools.</p>
+                <p> Bitrate ladder from Netflix
+                    recomendation.</p>
+                <p> Videos are played using apple native
+                    player(name?)
+                    and shaka player for wider browser
+                    support. Dolby atmos is supported on ios
+                    and safari in eac3joc
+                    format</p>
+                <hr>
+                <p> Dolby Atmos Content created with Pro
+                    Tools/Logic Pro X and Dolby Atmos
+                    renderer, then the Atmos
+                    Master file is converted to MP4</p>
+                <p> fmp4</p>
+                <hr>
+                <p> I hope this all runs fairly well. The
+                    last time i did this (and first..) end
+                    point was an ios app
+                    using apples system for spatial audio.
+                    Now in when browser is end point i
+                    wanted wider browser support which
+                    introduced some new codec
+                    culprits... </p>
+                <p> Ive tried react, Bootstrap, googles
+                    mui systems, some sass during this
+                    project but decided to try to
+                    keep it basic. </p>
+                <p> This is not an attempt to pass myself
+                    off as a programmer/coder. I just really
+                    enjoy poking around
+                    in stuff and this deeper level of
+                    control when trying to create something
+                    is just wonderful. If
+                    anything thats what id like to show
+                    here. Me enjoying that. </p>
+                <p> Stockholm </p>
+                <p> 0734166034 </p>
+                <p> bomarcusohlsson@gmail.com </p>
+                <p> shaka player, ffmpeg, dolby mp4demux
+                    dolby mp4mux </p>
+                <p> improvement plans: </p>
+                <p> pre-decode waveforms using wavesurfer
+                    for faster load </p>
+                <p> would love to get Eyevinns AutoVMAF to
+                    run to make the ABR ladder creation
+                    simpler</p>
+                <p> search bar content filtering</p>
+                <p> keyboard navigation</p>
+                <p> Implement more best practices for
+                    accesability and device compatibility.
+                </p>
+                <img src="temp_media/antichrist-chaos-reigns.gif" alt="Description of the GIF">
+            </div>
+        </div>
+    </div>
+    <div id="main-container" class="mx-auto p-4">
+        <!-- Video players will be added dynamically here -->
+    </div>
+    <!-- index.html -->
+    <script src="src/shaka.js"></script>
+    <script src="src/wavesurfer.js"></script>
+    <script src="src/menu.js"></script>
+    <script src="src/script.js"></script>
+    <script src="src/dropdown.js"></script>
+    <script src="src/darkmode.js"></script>
+</body>
+
+</html>

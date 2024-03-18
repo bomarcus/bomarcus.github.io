@@ -1,0 +1,4 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+}
