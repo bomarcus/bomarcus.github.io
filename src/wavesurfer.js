@@ -5,7 +5,7 @@ function configureWaveSurfer(wavesurfer) {
   // Add more configurations as needed
 }
 
-function initializeWaveSurfer(audioElement, audioUrl) {
+export function initializeWaveSurfer(audioElement, audioUrl) {
   // Create a new div for the audio player and its controls
   const audioContainer = document.createElement("div");
   audioContainer.className = "w-full h-full"; // Tailwind CSS classes for full width and height

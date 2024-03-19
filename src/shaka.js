@@ -1,4 +1,6 @@
-function initializeShakaPlayer(videoElement, videoUrl) {
+//shaka.js
+
+export function initializeShakaPlayer(videoElement, videoUrl) {
   if (shaka.Player.isBrowserSupported()) {
     const videoContainer = document.createElement("div");
     videoContainer.className = "w-full h-full";

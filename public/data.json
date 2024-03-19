@@ -1,0 +1,558 @@
+[
+  {
+    "title": "3000",
+    "category": "IOS",
+    "tags": [],
+    "subtitle": "Interactive Music App",
+    "description": "User chose a  brush and draw on the screen with fingers to control the audio",
+    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/3000/RPReplay_Final1696929676_HLS/RPReplay_Final1696929676_HLS.m3u8",
+        "videoDescription": "App store",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/3000/Johan_reff_5_sfx_HLS/Johan_reff_5_sfx_HLS.m3u8",
+        "videoDescription": "Development versions made in p5js and tonejs and combined by Johan Wik.",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/3000/TRIP_HLS/TRIP_HLS.m3u8",
+        "videoDescription": "Internal presentation",
+        "videoMoreInfo": "More info here"
+      }
+    ],
+    "audioUrls": [],
+    "info": {
+      "for": "",
+      "at": "Chroma Studios AB",
+      "i did": [
+        "sound design",
+        "audiokit signal chain setup",
+        "chat-gpt-code-prompting",
+        "try to hone webaudio"
+      ],
+      "using": [
+        "Pro Tools",
+        "Logic Pro X",
+        "Bronze Composer",
+        "In-house osc-tool",
+        "XCode",
+        "p5js",
+        "tone.js",
+        "chat-gpt"
+      ],
+      "with": [
+        "Andreas Pihlström",
+        "Isak Wiström",
+        "Daniel Skantze",
+        "Lex Droomgoole",
+        "Cari Lekebusch",
+        "Markus Wullf",
+        "Patrik Stenberg",
+        "Andreas Helin",
+        "Max Vitali",
+        "Johan Wik"
+      ],
+      "platform": "ios",
+      "year": "2023",
+      "audio format": "stereo",
+      "delivery": "ios",
+      "language": ""
+    }
+  },
+  {
+    "title": "own",
+    "category": "EXPERIMENTAL",
+    "tags": [""],
+    "production": "",
+    "format": "",
+    "subtitle": "",
+    "audioFormat": "",
+    "description": "",
+    "more": "",
+    "language": "",
+    "websiteUrls": [""],
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [
+      {
+        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
+        "url": "temp_media/wip_projects/V1-0001_audioplayer_p5js_mo_1.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "videoTitle": "Your title here",
+        "url": "temp_media/wip_projects/V1-0002_audioplayer_p5js_mo_2.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "videoTitle": "Your title here",
+        "url": "temp_media/wip_projects/V1-0003_audioplayer_p5js_mo_3.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "videoTitle": "Your title here",
+        "url": "temp_media/wip_projects/V1-0005_audioplayer_p5js_mo_4.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
+        "url": "temp_media/wip_projects/V1-0004_audioplayer_p5js_mo_5.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
+        "url": "temp_media/wip_projects/V1-0006_balls_p5js_mo_1.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
+        "url": "temp_media/wip_projects/V1-0007_balls_p5js_mo_1.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
+        "url": "temp_media/wip_projects/V1-0008_balls_p5js_mo_2.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
+        "url": "temp_media/wip_projects/V1-0009_balls_p5js_mo_2.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
+        "url": "temp_media/wip_projects/V1-0010_worms_p5js_mo_2.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
+        "url": "temp_media/wip_projects/V1-0011_worms_p5js_mo_3.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
+        "url": "temp_media/wip_projects/V1-0012_worms_p5js_mo_4.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      }
+    ],
+    "videoDisplay": "row"
+  },
+  {
+    "title": "Home",
+    "category": "HOME",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "",
+    "format": "",
+    "subtitle": "",
+    "audioFormat": "stereo",
+    "description": "",
+    "more": "",
+    "language": "",
+    "websiteUrls": [""],
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [],
+    "videoDisplay": "row"
+  },
+  {
+    "title": "Wip own",
+    "category": "EXPERIMENTAL",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "",
+    "format": "",
+    "subtitle": "",
+    "audioFormat": "stereo",
+    "description": "",
+    "more": "",
+    "language": "",
+    "websiteUrls": [""],
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [],
+    "videoDisplay": "row"
+  },
+  {
+    "title": "me",
+    "category": "ABOUT",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "",
+    "format": "",
+    "subtitle": "",
+    "audioFormat": "stereo",
+    "description": "",
+    "more": "",
+    "language": "",
+    "websiteUrls": [""],
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [],
+    "text": ""
+  },
+  {
+    "title": "3000",
+    "category": "MUSIC",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "",
+    "format": "",
+    "subtitle": "",
+    "audioFormat": "stereo",
+    "description": "",
+    "more": "",
+    "language": "",
+    "websiteUrls": [],
+    "imageUrl": "",
+    "audioUrls": [
+      {
+        "url": "https://storage.googleapis.com/maocloud/audio/akvarium_whatislife_1.wav",
+        "audioDescription": "Akvarium",
+        "audioMoreInfo": "i amske sjnjsdn music esitng jndkdjfn"
+      }
+    ],
+    "videoUrls": []
+  },
+
+  {
+    "title": "EZPZ",
+    "category": "IOS",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "Chroma",
+    "format": "IOS",
+    "subtitle": "Placeholder subtitle",
+    "audioFormat": "stereo",
+    "description": "sound",
+    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "language": "sv",
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/ezpz/ezpz_ig_1.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/ezpz/ezpz_yt_1.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      }
+    ]
+  },
+  {
+    "title": "Alive",
+    "category": "IOS",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "Chroma",
+    "format": "IOS",
+    "subtitle": "Placeholder subtitle",
+    "audioFormat": "Dolby Atmos eac3joc",
+    "description": "sound",
+    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+
+    "language": "sv",
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/alive/alive_ig_1.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/alive/alive_yt_1.mp4",
+        "videoDescription": "Your description here",
+        "videoMoreInfo": "More info here"
+      }
+    ]
+  },
+  {
+    "title": "Unreal",
+    "category": "DEVELOPMENT",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "",
+    "format": "",
+    "subtitle": "",
+    "audioFormat": "stereo",
+    "description": "",
+    "more": "",
+    "language": "",
+    "websiteUrls": [""],
+    "imageUrl": "",
+    "audioUrls": [
+      {
+        "url": "https://storage.googleapis.com/maocloud/wipeout_compressor/wipeout_hls.m3u8",
+        "audioDescription": "Your description here",
+        "audioMoreInfo": "More info here"
+      }
+    ],
+    "videoUrls": []
+  },
+  {
+    "title": "Dolby Atmos",
+    "category": "IOS",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "",
+    "format": "",
+    "subtitle": "",
+    "audioFormat": "stereo",
+    "description": "",
+    "more": "",
+    "language": "",
+    "websiteUrls": [""],
+    "imageUrl": "",
+    "audioUrls": [
+      {
+        "url": "https://storage.googleapis.com/maocloud/wipeout_compressor/wipeout_hls.m3u8",
+        "audioDescription": "Your description here",
+        "audioMoreInfo": "More info here"
+      }
+    ],
+    "videoUrls": []
+  },
+  {
+    "title": "contact",
+    "category": "CONTACT",
+    "tags": [],
+    "production": "",
+    "format": "",
+    "subtitle": "",
+    "audioFormat": "stereo",
+    "description": "",
+    "more": "",
+    "language": "",
+    "websiteUrls": [""],
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [],
+    "text": "<p>Stockholm</p>\n<p>0734166034</p>\n<p>bomarcusohlsson@gmail.com</p>"
+  },
+  {
+    "title": "Krogisar",
+    "category": "FILM",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "bolagsnamn",
+    "format": "FILM",
+    "subtitle": "subtitle",
+    "audioFormat": "stereo",
+    "description": "sound",
+    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/Krogsr/NA_KROGSR.mp4",
+        "videoDescription": "Krogisar",
+        "videoMoreInfo": "Short"
+      }
+    ],
+    "audioUrls": [],
+    "info": {
+      "for": "production company",
+      "at": "my studio",
+      "i did": ["sound design", "dialogue editing", "mix"],
+      "using": ["Pro Tools"],
+      "with": ["Simon Elvås (director)"],
+      "platform": "ios",
+      "year": "2023",
+      "audio format": "stereo",
+      "delivery": "ios",
+      "language": ""
+    }
+  },
+
+  {
+    "title": "Vällingbys Vänninor",
+    "category": "FILM",
+    "tags": ["Sound Design", "Mix", "dialogue editing"],
+    "production": "SKH",
+    "format": "FILM",
+    "subtitle": "subtitle",
+    "audioFormat": "stereo",
+    "description": "sound",
+    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/Vallingbys_Vaninnor/20210108_Vallingbys_Vanninor.mp4",
+        "videoDescription": "Vällingbys Vänninor",
+        "videoMoreInfo": "More info here"
+      }
+    ],
+    "audioUrls": [],
+    "info": {
+      "for": "production company",
+      "at": "my studio",
+      "i did": ["sound design", "dialogue editing", "mix"],
+      "using": ["Pro Tools"],
+      "with": ["Simon Elvås (director)"],
+      "platform": "ios",
+      "year": "2023",
+      "audio format": "stereo",
+      "delivery": "ios",
+      "language": ""
+    }
+  },
+
+  {
+    "title": "Korvkiosken",
+    "category": "FILM",
+    "tags": ["Sound Design", "Mix"],
+    "production": "bolagsnamn",
+    "format": "FILM",
+    "subtitle": "subtitle",
+    "audioFormat": "stereo",
+    "description": "sound",
+    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "url": "",
+        "videoDescription": "Korvkiosken",
+        "videoMoreInfo": "Dialogue edit mix etc"
+      }
+    ],
+    "audioUrls": [],
+    "info": {
+      "for": "production company",
+      "at": "my studio",
+      "i did": ["sound design", "dialogue editing", "mix"],
+      "using": ["Pro Tools"],
+      "with": ["Simon Elvås (director)"],
+      "platform": "ios",
+      "year": "2023",
+      "audio format": "stereo",
+      "delivery": "ios",
+      "language": ""
+    }
+  },
+
+  {
+    "title": "Epa",
+    "category": "FILM",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "prod",
+    "format": "FILM",
+    "subtitle": "subtitle",
+    "audioFormat": "stereo",
+    "description": "sound",
+    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/Trafikverket/Epa/20221221_EPA_ONLINE_221221.mp4",
+        "videoDescription": "Epa",
+        "videoMoreInfo": "More info here"
+      }
+    ],
+    "audioUrls": [],
+    "info": {
+      "for": "production company",
+      "at": "my studio",
+      "i did": ["sound design", "dialogue editing", "mix"],
+      "using": ["Pro Tools"],
+      "with": ["Simon Elvås (director)"],
+      "platform": "ios",
+      "year": "2023",
+      "audio format": "stereo",
+      "delivery": "ios",
+      "language": ""
+    }
+  }
+]

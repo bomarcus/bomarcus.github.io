@@ -1,3 +1,7 @@
+//script.js
+import { initializeShakaPlayer } from "./shaka.js";
+import { initializeWaveSurfer } from "./wavesurfer.js";
+
 let currentlyPlayingVideo = null;
 let currentlyPlayingAudio = null;
 
@@ -20,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function createMediaSection(item, index) {
   // Find the container for the item's category
   const categoryContainer = document.getElementById(
-    item.category.toLowerCase()
+    item.category.toLowerCase(),
   );
   if (!categoryContainer) {
     console.warn(`No container found for category: ${item.category}`);
