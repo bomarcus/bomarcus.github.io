@@ -29,7 +29,7 @@ fetch(dataPath)
       "mt-0.5",
       "px-0.5"
     );
-    menuContainer.style.maxWidth = "960px";
+    menuContainer.style.maxWidth = "1920px";
 
     Object.entries(groupedData).forEach(([category, items]) => {
       const categoryWrapper = document.createElement("div");

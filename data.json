@@ -1,7 +1,72 @@
 [
   {
+    "title": "3000",
+    "category": "IOS",
+    "tags": [],
+    "subtitle": "Interactive Music App",
+    "description": "User chose a  brush and draw on the screen with fingers to control the audio",
+    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/3000/RPReplay_Final1696929676_HLS/RPReplay_Final1696929676_HLS.m3u8",
+        "videoDescription": "App store",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/3000/Johan_reff_5_sfx_HLS/Johan_reff_5_sfx_HLS.m3u8",
+        "videoDescription": "Development versions made in p5js and tonejs and combined by Johan Wik.",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/3000/TRIP_HLS/TRIP_HLS.m3u8",
+        "videoDescription": "Internal presentation",
+        "videoMoreInfo": "More info here"
+      }
+    ],
+    "audioUrls": [],
+    "info": {
+      "for": "",
+      "at": "Chroma Studios AB",
+      "i did": [
+        "sound design",
+        "audiokit signal chain setup",
+        "chat-gpt-code-prompting",
+        "try to hone webaudio"
+      ],
+      "using": [
+        "Pro Tools",
+        "Logic Pro X",
+        "Bronze Composer",
+        "In-house osc-tool",
+        "XCode",
+        "p5js",
+        "tone.js",
+        "chat-gpt"
+      ],
+      "with": [
+        "Andreas Pihlström",
+        "Isak Wiström",
+        "Daniel Skantze",
+        "Lex Droomgoole",
+        "Cari Lekebusch",
+        "Markus Wullf",
+        "Patrik Stenberg",
+        "Andreas Helin",
+        "Max Vitali",
+        "Johan Wik"
+      ],
+      "platform": "ios",
+      "year": "2023",
+      "audio format": "stereo",
+      "delivery": "ios",
+      "language": ""
+    }
+  },
+  {
     "title": "own",
-    "category": "Experimental",
+    "category": "EXPERIMENTAL",
     "tags": [""],
     "production": "",
     "format": "",
@@ -194,45 +259,7 @@
     ],
     "videoUrls": []
   },
-  {
-    "title": "IOS",
-    "category": "IOS",
-    "tags": [
-      "Chroma",
-      "Sound Design",
-      "Mix",
-      "Short",
-      "Recording",
-      "Spatial Audio",
-      "Dolby Atmos"
-    ],
-    "production": "Chroma",
-    "format": "IOS",
-    "subtitle": "Placeholder subtitle",
-    "audioFormat": "Dolby Atmos eac3joc",
-    "description": "",
-    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
-    "language": "",
-    "imageUrl": "",
-    "videoUrls": [
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/3000/RPReplay_Final1696929676.mp4",
-        "videoDescription": "App store",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/3000/Johan_reff_5_sfx.mp4",
-        "videoDescription": "work in progress",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/3000/TRIP.mp4",
-        "videoDescription": "Internal presentation",
-        "videoMoreInfo": "More info here"
-      }
-    ],
-    "audioUrls": []
-  },
+
   {
     "title": "EZPZ",
     "category": "IOS",
@@ -405,7 +432,19 @@
         "videoMoreInfo": "Short"
       }
     ],
-    "audioUrls": []
+    "audioUrls": [],
+    "info": {
+      "for": "production company",
+      "at": "my studio",
+      "i did": ["sound design", "dialogue editing", "mix"],
+      "using": ["Pro Tools"],
+      "with": ["Simon Elvås (director)"],
+      "platform": "ios",
+      "year": "2023",
+      "audio format": "stereo",
+      "delivery": "ios",
+      "language": ""
+    }
   },
 
   {
@@ -427,7 +466,19 @@
         "videoMoreInfo": "More info here"
       }
     ],
-    "audioUrls": []
+    "audioUrls": [],
+    "info": {
+      "for": "production company",
+      "at": "my studio",
+      "i did": ["sound design", "dialogue editing", "mix"],
+      "using": ["Pro Tools"],
+      "with": ["Simon Elvås (director)"],
+      "platform": "ios",
+      "year": "2023",
+      "audio format": "stereo",
+      "delivery": "ios",
+      "language": ""
+    }
   },
 
   {
@@ -449,7 +500,19 @@
         "videoMoreInfo": "Dialogue edit mix etc"
       }
     ],
-    "audioUrls": []
+    "audioUrls": [],
+    "info": {
+      "for": "production company",
+      "at": "my studio",
+      "i did": ["sound design", "dialogue editing", "mix"],
+      "using": ["Pro Tools"],
+      "with": ["Simon Elvås (director)"],
+      "platform": "ios",
+      "year": "2023",
+      "audio format": "stereo",
+      "delivery": "ios",
+      "language": ""
+    }
   },
 
   {
@@ -478,6 +541,18 @@
         "videoMoreInfo": "More info here"
       }
     ],
-    "audioUrls": []
+    "audioUrls": [],
+    "info": {
+      "for": "production company",
+      "at": "my studio",
+      "i did": ["sound design", "dialogue editing", "mix"],
+      "using": ["Pro Tools"],
+      "with": ["Simon Elvås (director)"],
+      "platform": "ios",
+      "year": "2023",
+      "audio format": "stereo",
+      "delivery": "ios",
+      "language": ""
+    }
   }
 ]

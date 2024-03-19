@@ -95,6 +95,11 @@ function createMediaSection(item, index) {
         // Tailwind CSS for text alignment
         videoMoreInfo.className = "text-base text-center mt-2";
         section.appendChild(videoMoreInfo);
+
+        // Add a divider after each videoMoreInfo
+        const divider = document.createElement("hr");
+        divider.style.borderTop = "0.5px solid currentColor"; // Half the size and same color as the text
+        section.appendChild(divider);
       }
 
       shakaVideo.addEventListener("play", () => {
@@ -174,6 +179,54 @@ function createMediaSection(item, index) {
   // Tailwind CSS for divider styling, adjust as needed
   divider.className = "my-12 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10";
   section.appendChild(divider);
+
+  //info box
+  if (item.info) {
+    // Create a div to group the info elements
+    const infoContainer = document.createElement("div");
+    infoContainer.className = "info-container"; // Add a class for styling
+
+    // Iterate through each key in the info object
+    Object.entries(item.info).forEach(([key, value], index, array) => {
+      if (value) {
+        // Check if value is not empty or not null
+        const infoElement = document.createElement("div"); // Change this to a div
+        infoElement.className = "flex border-b"; // Add flex and border-bottom
+
+        const keyElement = document.createElement("span");
+        keyElement.innerHTML = `<strong>${key}:</strong>`;
+        keyElement.className = "w-32"; // Tailwind CSS for width
+
+        const valueElement = document.createElement("span");
+
+        if (Array.isArray(value)) {
+          // If value is an array, create a list
+          const list = document.createElement("ul");
+          value.forEach((item) => {
+            const listItem = document.createElement("li");
+            listItem.textContent = item;
+            list.appendChild(listItem);
+          });
+          valueElement.appendChild(list);
+        } else {
+          // If value is not an array, just append the value
+          valueElement.textContent = value;
+        }
+
+        infoElement.appendChild(keyElement);
+        infoElement.appendChild(valueElement);
+        infoContainer.appendChild(infoElement);
+        // If it's not the last element, add a divider
+        if (index < array.length - 1) {
+          const divider = document.createElement("hr");
+          divider.style.borderTop = "0.5px solid currentColor"; // Half the size and same color as the text
+          infoContainer.appendChild(divider);
+        } // Append to the infoContainer instead of the section
+      }
+    });
+
+    section.appendChild(infoContainer); // Append the infoContainer to the section
+  }
 
   categoryContainer.appendChild(section);
 }
