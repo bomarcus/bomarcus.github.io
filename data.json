@@ -1,14 +1,14 @@
 [
   {
-    "title": "Wip own",
+    "title": "own",
+    "category": "Experimental",
+    "tags": [""],
     "production": "",
     "format": "",
     "subtitle": "",
     "audioFormat": "",
     "description": "",
     "more": "",
-    "tags": [""],
-    "category": "",
     "language": "",
     "websiteUrls": [""],
     "imageUrl": "",
@@ -90,15 +90,73 @@
     "videoDisplay": "row"
   },
   {
-    "title": "About this page",
+    "title": "Home",
+    "category": "HOME",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
     "production": "",
     "format": "",
     "subtitle": "",
-    "audioFormat": "",
+    "audioFormat": "stereo",
     "description": "",
     "more": "",
-    "tags": [""],
-    "category": "",
+    "language": "",
+    "websiteUrls": [""],
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [],
+    "videoDisplay": "row"
+  },
+  {
+    "title": "Wip own",
+    "category": "EXPERIMENTAL",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "",
+    "format": "",
+    "subtitle": "",
+    "audioFormat": "stereo",
+    "description": "",
+    "more": "",
+    "language": "",
+    "websiteUrls": [""],
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [],
+    "videoDisplay": "row"
+  },
+  {
+    "title": "me",
+    "category": "ABOUT",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "",
+    "format": "",
+    "subtitle": "",
+    "audioFormat": "stereo",
+    "description": "",
+    "more": "",
     "language": "",
     "websiteUrls": [""],
     "imageUrl": "",
@@ -107,15 +165,23 @@
     "text": ""
   },
   {
-    "title": "Sound Design",
+    "title": "3000",
+    "category": "MUSIC",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
     "production": "",
     "format": "",
     "subtitle": "",
-    "audioFormat": "",
+    "audioFormat": "stereo",
     "description": "",
     "more": "",
-    "tags": [],
-    "category": "",
     "language": "",
     "websiteUrls": [],
     "imageUrl": "",
@@ -129,61 +195,23 @@
     "videoUrls": []
   },
   {
-    "title": "Film",
-    "production": "bolagsnamn",
-    "format": "film",
-    "subtitle": "subtitle",
-    "audioFormat": "stereo",
-    "description": "sound",
-    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
-    "tags": [],
-    "category": "",
-    "language": "",
-    "imageUrl": "",
-    "videoUrls": [
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/Krogsr/NA_KROGSR.mp4",
-        "videoDescription": "Krogisar",
-        "videoMoreInfo": "Short"
-      },
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/Trafikverket/Korvkiosken/20221221_KORVKIOSKEN_-_ONLINE_221221.mp4",
-        "videoDescription": "Korvkiosken",
-        "videoMoreInfo": "Dialogue edit mix etc"
-      },
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/Trafikverket/Epa/20221221_EPA_ONLINE_221221.mp4",
-        "videoDescription": "Epa",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/Krogsr/NA_KROGSR.mp4",
-        "videoDescription": "Krogisar",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/Vallingbys_Vaninnor/20210108_Vallingbys_Vanninor.mp4",
-        "videoDescription": "Vällingbys Vänninor",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/Ziba/20220530_Ziba.mp4",
-        "videoDescription": "Ziba",
-        "videoMoreInfo": "More info here"
-      }
-    ],
-    "audioUrls": []
-  },
-  {
     "title": "IOS",
+    "category": "IOS",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
     "production": "Chroma",
-    "format": "ios",
+    "format": "IOS",
     "subtitle": "Placeholder subtitle",
     "audioFormat": "Dolby Atmos eac3joc",
     "description": "",
     "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
-    "tags": [],
-    "category": "",
     "language": "",
     "imageUrl": "",
     "videoUrls": [
@@ -207,14 +235,22 @@
   },
   {
     "title": "EZPZ",
+    "category": "IOS",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
     "production": "Chroma",
-    "format": "ios",
+    "format": "IOS",
     "subtitle": "Placeholder subtitle",
-    "audioFormat": "",
+    "audioFormat": "stereo",
     "description": "sound",
     "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
-    "tags": [],
-    "category": "Sound Design",
     "language": "sv",
     "imageUrl": "",
     "audioUrls": [],
@@ -233,12 +269,7 @@
   },
   {
     "title": "Alive",
-    "production": "Chroma",
-    "format": "ios",
-    "subtitle": "Placeholder subtitle",
-    "audioFormat": "Dolby Atmos eac3joc",
-    "description": "sound",
-    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "category": "IOS",
     "tags": [
       "Chroma",
       "Sound Design",
@@ -248,7 +279,13 @@
       "Spatial Audio",
       "Dolby Atmos"
     ],
-    "category": "Sound Design",
+    "production": "Chroma",
+    "format": "IOS",
+    "subtitle": "Placeholder subtitle",
+    "audioFormat": "Dolby Atmos eac3joc",
+    "description": "sound",
+    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+
     "language": "sv",
     "imageUrl": "",
     "audioUrls": [],
@@ -267,80 +304,180 @@
   },
   {
     "title": "Unreal",
+    "category": "DEVELOPMENT",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
     "production": "",
     "format": "",
     "subtitle": "",
-    "audioFormat": "",
+    "audioFormat": "stereo",
     "description": "",
     "more": "",
-    "tags": [""],
-    "category": "",
     "language": "",
     "websiteUrls": [""],
     "imageUrl": "",
-    "audioUrls": [],
-    "videoUrls": [
+    "audioUrls": [
       {
         "url": "https://storage.googleapis.com/maocloud/wipeout_compressor/wipeout_hls.m3u8",
         "audioDescription": "Your description here",
         "audioMoreInfo": "More info here"
       }
-    ]
+    ],
+    "videoUrls": []
   },
   {
     "title": "Dolby Atmos",
+    "category": "IOS",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
     "production": "",
     "format": "",
     "subtitle": "",
-    "audioFormat": "",
+    "audioFormat": "stereo",
     "description": "",
     "more": "",
-    "tags": [""],
-    "category": "",
     "language": "",
     "websiteUrls": [""],
     "imageUrl": "",
-    "audioUrls": [],
-    "videoUrls": [
+    "audioUrls": [
       {
         "url": "https://storage.googleapis.com/maocloud/wipeout_compressor/wipeout_hls.m3u8",
         "audioDescription": "Your description here",
         "audioMoreInfo": "More info here"
       }
-    ]
+    ],
+    "videoUrls": []
   },
   {
-    "title": "About me",
+    "title": "contact",
+    "category": "CONTACT",
+    "tags": [],
     "production": "",
     "format": "",
     "subtitle": "",
-    "audioFormat": "",
+    "audioFormat": "stereo",
     "description": "",
     "more": "",
-    "tags": [""],
-    "category": "",
-    "language": "",
-    "websiteUrls": [""],
-    "imageUrl": "",
-    "audioUrls": [],
-    "videoUrls": [],
-    "text": "<p>I enjoy problem</p>"
-  },
-  {
-    "title": "Contact",
-    "production": "",
-    "format": "",
-    "subtitle": "",
-    "audioFormat": "",
-    "description": "",
-    "more": "",
-    "tags": [""],
-    "category": "",
     "language": "",
     "websiteUrls": [""],
     "imageUrl": "",
     "audioUrls": [],
     "videoUrls": [],
     "text": "<p>Stockholm</p>\n<p>0734166034</p>\n<p>bomarcusohlsson@gmail.com</p>"
+  },
+  {
+    "title": "Krogisar",
+    "category": "FILM",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "bolagsnamn",
+    "format": "FILM",
+    "subtitle": "subtitle",
+    "audioFormat": "stereo",
+    "description": "sound",
+    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/Krogsr/NA_KROGSR.mp4",
+        "videoDescription": "Krogisar",
+        "videoMoreInfo": "Short"
+      }
+    ],
+    "audioUrls": []
+  },
+
+  {
+    "title": "Vällingbys Vänninor",
+    "category": "FILM",
+    "tags": ["Sound Design", "Mix", "dialogue editing"],
+    "production": "SKH",
+    "format": "FILM",
+    "subtitle": "subtitle",
+    "audioFormat": "stereo",
+    "description": "sound",
+    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/Vallingbys_Vaninnor/20210108_Vallingbys_Vanninor.mp4",
+        "videoDescription": "Vällingbys Vänninor",
+        "videoMoreInfo": "More info here"
+      }
+    ],
+    "audioUrls": []
+  },
+
+  {
+    "title": "Korvkiosken",
+    "category": "FILM",
+    "tags": ["Sound Design", "Mix"],
+    "production": "bolagsnamn",
+    "format": "FILM",
+    "subtitle": "subtitle",
+    "audioFormat": "stereo",
+    "description": "sound",
+    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "url": "",
+        "videoDescription": "Korvkiosken",
+        "videoMoreInfo": "Dialogue edit mix etc"
+      }
+    ],
+    "audioUrls": []
+  },
+
+  {
+    "title": "Epa",
+    "category": "FILM",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "prod",
+    "format": "FILM",
+    "subtitle": "subtitle",
+    "audioFormat": "stereo",
+    "description": "sound",
+    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "url": "https://storage.googleapis.com/maocloud/videos/Trafikverket/Epa/20221221_EPA_ONLINE_221221.mp4",
+        "videoDescription": "Epa",
+        "videoMoreInfo": "More info here"
+      }
+    ],
+    "audioUrls": []
   }
 ]

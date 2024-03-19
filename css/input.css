@@ -2,17 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 }
 
 body {
-  @apply text-gray-800 bg-red-500;
+  @apply text-gray-800/75 bg-red-500;
 }
 
 body.dark {
-  @apply text-white bg-gray-800;
+  @apply text-white/75 bg-gray-800;
 }
 
 .menu-item:hover {
@@ -20,5 +19,5 @@ body.dark {
 }
 
 body.dark .menu-item:hover {
-  @apply  text-red-500;
+  @apply text-red-500;
 }

@@ -1,17 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'selector',
-  content: [
-    "./src/**/*.{html,js}",
-    "./index.html",
-    "./**/*.html",
-    "./input.css", // Add this line
-  ],
+  content: ["./index.html", "./src/**/*.js"],
   theme: {
-    extend: {      fontFamily: {
-        'bungee': ['Bungee', 'sans-serif'],
-        'space-mono': ['Space Mono', 'monospace'],
-      }},
+    extend: {
+      fontFamily: {
+        bungee: ["Bungee", "cursive"], // Add this line
+      },
+    },
   },
   plugins: [],
-}
+};

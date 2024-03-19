@@ -23,29 +23,29 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/input.css">
 </head>
 
-<body class>
-    <div id="Header" class="text-center p-5">
-        <button id="dark-mode-toggle" class="text-gray-400 hover:text-gray-600">
+<body>
+    <div id="Header" class="text-center p-0.5">
+        <button id="dark-mode-toggle" class="text-gray-800 hover:text-gray-600">
             <span class="material-icons-outlined" id="light-mode-icon"
                 style="display: none;">radio_button_unchecked</span>
             <span class="material-icons-outlined" id="dark-mode-icon">dark_mode</span>
         </button>
-        <h1 class="text-3xl font-bungee mt-5">Bo Marcus Ohlsson</h1>
-        <div class="text-xs mt-2 text-base">
+        <h1 class="text-3xl font-bungee mt-0.5">Bo Marcus Ohlsson</h1>
+        <div class="text-xs mt-0.5 text-base">
             <p>Golden Hits - Doom scrolling extravaganza.</p>
             <p>Made with ChatGPT and GitHub Copilot.</p>
             <p>Plus show more project info.</p>
             <p>I have never made a homepage before.</p>
         </div>
-        <div class="dropdown relative mt-5">
+        <div class="dropdown relative mt-0.5">
             <button type="button"
                 class="collapsible text-lg bg-transparent border-none cursor-pointer focus:outline-none hover:text-red-500">
                 +
             </button>
-            <div class="content transition-max-height duration-200 ease-in-out overflow-hidden max-h-0 mt-5 text-xs">
+            <div class="content transition-max-height duration-200 ease-in-out overflow-hidden max-h-0 mt-0.5 text-xs">
                 <p>All code written using Github Copilot and ChatGPT-4</p>
                 <p> Page is dynamically created from a
                     json to keep a consistent format of
@@ -123,13 +123,43 @@
             </div>
         </div>
     </div>
-    <div id="main-container" class="mx-auto p-4">
-        <!-- Video players will be added dynamically here -->
+
+    <div id="menu" class="mx-auto mt-0.5 px-4 py-0.5"></div>
+    <!-- Example Category Containers -->
+    <div id="main-container">
+        <section id="home" class="category-container">
+            <!-- Dynamic content will be appended here -->
+        </section>
+        <section id="film" class="category-container">
+            <!-- Dynamic content will be appended here -->
+        </section>
+        <section id="music" class="category-container">
+            <!-- Dynamic content will be appended here -->
+        </section>
+        <section id="ios" class="category-container">
+            <!-- Dynamic content will be appended here -->
+        </section>
+        <section id="development" class="category-container">
+            <!-- Dynamic content will be appended here -->
+        </section>
+        <section id="about" class="category-container">
+            <!-- Dynamic content will be appended here -->
+        </section>
+        <section id="contact" class="category-container">
+            <!-- Dynamic content will be appended here -->
+        </section>
+        <section id="experimental" class="category-container">
+            <h2 class="category-title">EXPERIMENTAL</h2>
+            <!-- Dynamic content will be appended here -->
+        </section>
+        <!-- Repeat for other categories -->
     </div>
+
+
     <!-- index.html -->
+    <script src="src/menu.js"></script>
     <script src="src/shaka.js"></script>
     <script src="src/wavesurfer.js"></script>
-    <script src="src/menu.js"></script>
     <script src="src/script.js"></script>
     <script src="src/dropdown.js"></script>
     <script src="src/darkmode.js"></script>

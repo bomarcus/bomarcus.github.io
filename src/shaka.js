@@ -1,24 +1,14 @@
 function initializeShakaPlayer(videoElement, videoUrl) {
   if (shaka.Player.isBrowserSupported()) {
-    // Create a new div for the video player and its controls
     const videoContainer = document.createElement("div");
-    videoContainer.className = "w-full h-full"; // Tailwind CSS classes for full width and height
+    videoContainer.className = "w-full h-full";
 
-    // Replace the video element with the new container
     videoElement.replaceWith(videoContainer);
-
-    // Add the video element to the container
     videoContainer.appendChild(videoElement);
 
-    // Create a Player instance without passing the videoElement.
     const player = new shaka.Player();
-
-    // Attach the player to the videoElement.
     player.attach(videoElement).then(() => {
-      // Create a UI instance and pass it the video element, player instance, and the container for the UI
       const ui = new shaka.ui.Overlay(player, videoContainer, videoElement);
-
-      // Configure the UI instance
       const config = {
         addSeekBar: true,
         addBigPlayButton: true,
@@ -32,7 +22,21 @@ function initializeShakaPlayer(videoElement, videoUrl) {
         })
         .catch((error) => {
           console.error("Error setting up Shaka Player:", error);
-          console.error("Failed to load video URL:", videoUrl); // Added console log
+          console.error("Failed to load video URL:", videoUrl);
+          // Add visual indication for the error inside the video container
+          const errorMessage = document.createElement("div");
+          errorMessage.textContent =
+            "Failed to load video. Please try again later.";
+          errorMessage.style.position = "absolute";
+          errorMessage.style.top = "50%";
+          errorMessage.style.left = "50%";
+          errorMessage.style.transform = "translate(-50%, -50%)";
+          errorMessage.style.color = "white";
+          errorMessage.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+          errorMessage.style.padding = "10px";
+          errorMessage.style.borderRadius = "5px";
+          errorMessage.style.textAlign = "center";
+          videoContainer.appendChild(errorMessage);
         });
     });
   } else {

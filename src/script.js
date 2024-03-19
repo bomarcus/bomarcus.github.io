@@ -5,27 +5,38 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("data.json")
     .then((response) => response.json())
     .then((data) => {
-      const mainContainer = document.getElementById("main-container");
       data.forEach((item, index) => {
-        createMediaSection(item, mainContainer, index + 1);
+        createMediaSection(item, index + 1);
       });
-      if (window.setupMenuAndObserver) {
-        window.setupMenuAndObserver(data);
-      } else {
-        console.error("setupMenuAndObserver function not found");
-      }
+      // Additional setup as needed
     })
+    .catch((error) => console.error("Error loading JSON:", error))
     .catch((error) => {
       console.error("Error loading JSON:", error);
       console.log("Failed to load some videos due to the above error.");
     });
 });
 
-function createMediaSection(item, container, index) {
+function createMediaSection(item, index) {
+  // Find the container for the item's category
+  const categoryContainer = document.getElementById(
+    item.category.toLowerCase()
+  );
+  if (!categoryContainer) {
+    console.warn(`No container found for category: ${item.category}`);
+    return;
+  }
+
   const section = document.createElement("section");
-  // Updated classes for Tailwind CSS
-  section.className = "w-3/4 mx-auto py-4 text-xs border-b border-gray-200";
-  section.id = item.title.toLowerCase().replace(/ /g, "_");
+  section.className = "w-3/4 mx-auto py-4 text-xs";
+  section.id = `${item.category.toLowerCase()}_${index}`;
+  section.setAttribute("data-title", item.title); // Add data-title attribute
+
+  const categoryTitle = document.createElement("h2");
+  categoryTitle.textContent = item.category;
+  // Tailwind CSS for text alignment and font styling
+  categoryTitle.className = "text-xl font-bold";
+  section.appendChild(categoryTitle);
 
   const indexHeading = document.createElement("h2");
   indexHeading.textContent = `${item.title}`;
@@ -52,8 +63,8 @@ function createMediaSection(item, container, index) {
   if (item.description) {
     const description = document.createElement("p");
     description.textContent = item.description;
-    // Tailwind CSS for text styling
-    description.className = "text-base";
+    // Tailwind CSS for text styling and top margin
+    description.className = "text-base mt-4";
     section.appendChild(description);
   }
 
@@ -67,7 +78,7 @@ function createMediaSection(item, container, index) {
         const videoTitle = document.createElement("p");
         videoTitle.textContent = videoUrl.videoTitle;
         // Tailwind CSS for text alignment and styling
-        videoTitle.className = "text-center font-medium";
+        videoTitle.className = "text-center font-medium mt-4";
         section.appendChild(videoTitle);
 
         shakaVideo.src = url;
@@ -76,13 +87,13 @@ function createMediaSection(item, container, index) {
         const videoDescription = document.createElement("p");
         videoDescription.textContent = videoUrl.videoDescription;
         // Tailwind CSS for text alignment, styling, and italic font
-        videoDescription.className = "text-center italic";
+        videoDescription.className = "text-base text-center italic mt-3 ";
         section.appendChild(videoDescription);
 
         const videoMoreInfo = document.createElement("p");
         videoMoreInfo.textContent = videoUrl.videoMoreInfo;
         // Tailwind CSS for text alignment
-        videoMoreInfo.className = "text-center";
+        videoMoreInfo.className = "text-base text-center mt-2";
         section.appendChild(videoMoreInfo);
       }
 
@@ -158,10 +169,11 @@ function createMediaSection(item, container, index) {
     section.appendChild(text);
   }
 
+  // Add a divider at the bottom of each section
   const divider = document.createElement("hr");
-  // Updated Tailwind CSS classes for the divider
-  divider.className = "my-4 border-t border-gray-200";
+  // Tailwind CSS for divider styling, adjust as needed
+  divider.className = "my-12 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10";
   section.appendChild(divider);
 
-  container.appendChild(section);
+  categoryContainer.appendChild(section);
 }
