@@ -78,80 +78,7 @@
     "websiteUrls": [""],
     "imageUrl": "",
     "audioUrls": [],
-    "videoUrls": [
-      {
-        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
-        "url": "temp_media/wip_projects/V1-0001_audioplayer_p5js_mo_1.mp4",
-        "videoDescription": "Your description here",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "videoTitle": "Your title here",
-        "url": "temp_media/wip_projects/V1-0002_audioplayer_p5js_mo_2.mp4",
-        "videoDescription": "Your description here",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "videoTitle": "Your title here",
-        "url": "temp_media/wip_projects/V1-0003_audioplayer_p5js_mo_3.mp4",
-        "videoDescription": "Your description here",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "videoTitle": "Your title here",
-        "url": "temp_media/wip_projects/V1-0005_audioplayer_p5js_mo_4.mp4",
-        "videoDescription": "Your description here",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
-        "url": "temp_media/wip_projects/V1-0004_audioplayer_p5js_mo_5.mp4",
-        "videoDescription": "Your description here",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
-        "url": "temp_media/wip_projects/V1-0006_balls_p5js_mo_1.mp4",
-        "videoDescription": "Your description here",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
-        "url": "temp_media/wip_projects/V1-0007_balls_p5js_mo_1.mp4",
-        "videoDescription": "Your description here",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
-        "url": "temp_media/wip_projects/V1-0008_balls_p5js_mo_2.mp4",
-        "videoDescription": "Your description here",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
-        "url": "temp_media/wip_projects/V1-0009_balls_p5js_mo_2.mp4",
-        "videoDescription": "Your description here",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
-        "url": "temp_media/wip_projects/V1-0010_worms_p5js_mo_2.mp4",
-        "videoDescription": "Your description here",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
-        "url": "temp_media/wip_projects/V1-0011_worms_p5js_mo_3.mp4",
-        "videoDescription": "Your description here",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "videoTitle": "audio reactive particle clouds are fantstic for all newbs i would imagine",
-        "url": "temp_media/wip_projects/V1-0012_worms_p5js_mo_4.mp4",
-        "videoDescription": "Your description here",
-        "videoMoreInfo": "More info here"
-      }
-    ],
+    "videoUrls": [],
     "videoDisplay": "row"
   },
   {
@@ -283,13 +210,13 @@
     "audioUrls": [],
     "videoUrls": [
       {
-        "url": "https://storage.googleapis.com/maocloud/videos/ezpz/ezpz_ig_1.mp4",
-        "videoDescription": "Your description here",
+        "url": "https://storage.googleapis.com/maocloud/videos/EZPZ_IG_1_HLS/EZPZ_IG_1_HLS.m3u8",
+        "videoDescription": "Instagram",
         "videoMoreInfo": "More info here"
       },
       {
-        "url": "https://storage.googleapis.com/maocloud/videos/ezpz/ezpz_yt_1.mp4",
-        "videoDescription": "Your description here",
+        "url": "https://storage.googleapis.com/maocloud/videos/EZPZ_YT_1_1_HLS/EZPZ_YT_1_1_HLS.m3u8",
+        "videoDescription": "youtube",
         "videoMoreInfo": "More info here"
       }
     ]
@@ -318,14 +245,14 @@
     "audioUrls": [],
     "videoUrls": [
       {
-        "url": "https://storage.googleapis.com/maocloud/videos/alive/alive_ig_1.mp4",
-        "videoDescription": "Your description here",
-        "videoMoreInfo": "More info here"
+        "url": "https://storage.googleapis.com/maocloud/videos/ALIVE_IG_1_1_HLS/ALIVE_IG_1_1_HLS.m3u8",
+        "videoDescription": "instagram",
+        "videoMoreInfo": "HLS variants made by apple compressor"
       },
       {
-        "url": "https://storage.googleapis.com/maocloud/videos/alive/alive_yt_1.mp4",
-        "videoDescription": "Your description here",
-        "videoMoreInfo": "More info here"
+        "url": "https://storage.googleapis.com/maocloud/videos/ALIVE_YT_1_HLS/ALIVE_YT_1_HLS.m3u8",
+        "videoDescription": "youtube",
+        "videoMoreInfo": "HLS variants made by apple compressor"
       }
     ]
   },
@@ -427,7 +354,7 @@
     "imageUrl": "",
     "videoUrls": [
       {
-        "url": "https://storage.googleapis.com/maocloud/videos/Krogsr/NA_KROGSR.mp4",
+        "url": "https://storage.googleapis.com/maocloud/videos/KROGSR_HLS/KROGSR_HLS.m3u8",
         "videoDescription": "Krogisar",
         "videoMoreInfo": "Short"
       }
@@ -461,7 +388,7 @@
     "imageUrl": "",
     "videoUrls": [
       {
-        "url": "https://storage.googleapis.com/maocloud/videos/Vallingbys_Vaninnor/20210108_Vallingbys_Vanninor.mp4",
+        "url": "https://storage.googleapis.com/maocloud/videos/VALLINGBY_HLS/VALLINGBY_HLS.m3u8",
         "videoDescription": "Vällingbys Vänninor",
         "videoMoreInfo": "More info here"
       }
@@ -495,7 +422,7 @@
     "imageUrl": "",
     "videoUrls": [
       {
-        "url": "",
+        "url": "https://storage.googleapis.com/maocloud/videos/Trafikverket/KORVKIOSKEN_HLS/KORVKIOSKEN_HLS.m3u8",
         "videoDescription": "Korvkiosken",
         "videoMoreInfo": "Dialogue edit mix etc"
       }
@@ -536,7 +463,7 @@
     "imageUrl": "",
     "videoUrls": [
       {
-        "url": "https://storage.googleapis.com/maocloud/videos/Trafikverket/Epa/20221221_EPA_ONLINE_221221.mp4",
+        "url": "https://storage.googleapis.com/maocloud/videos/Trafikverket/EPA_HLS/EPA_HLS.m3u8",
         "videoDescription": "Epa",
         "videoMoreInfo": "More info here"
       }

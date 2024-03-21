@@ -223,7 +223,14 @@ function createMediaSection(item, index) {
         // If it's not the last element, add a divider
         if (index < array.length - 1) {
           const divider = document.createElement("hr");
-          divider.style.borderTop = "0.5px solid currentColor"; // Half the size and same color as the text
+          divider.classList.add(
+            "my-12",
+            "h-0.5",
+            "border-t-0",
+            "bg-neutral-100",
+            "dark:bg-white/10",
+          );
+          section.appendChild(divider);
           infoContainer.appendChild(divider);
         } // Append to the infoContainer instead of the section
       }

@@ -7,11 +7,11 @@ body {
 }
 
 body {
-  @apply text-gray-800/75 bg-red-500;
+  @apply bg-red-500 text-gray-800/75;
 }
 
 body.dark {
-  @apply text-white/75 bg-gray-800;
+  @apply bg-gray-800 text-white/75;
 }
 
 .menu-item:hover {

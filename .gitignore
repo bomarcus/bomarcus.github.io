@@ -6,3 +6,4 @@ todo.md
 temp_media/
 node_modules/
 .vscode
+cors.json

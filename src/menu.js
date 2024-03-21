@@ -1,4 +1,21 @@
 const dataPath = "data.json";
+let currentOpenDropdown = null; // Variable to keep track of the open dropdown
+let currentActiveButton = null; // Variable to keep track of the active button
+
+function setActiveButton(button) {
+  // Reset the previously active button if there is one
+  if (currentActiveButton) {
+    currentActiveButton.classList.remove("bg-blue-500", "text-white"); // Adjust these classes as needed
+    currentActiveButton.classList.add("hover:text-white"); // Return hover effect
+  }
+
+  // Set the new active button
+  currentActiveButton = button;
+  if (currentActiveButton) {
+    currentActiveButton.classList.add("bg-blue-500", "text-white"); // Example classes for active state
+    currentActiveButton.classList.remove("hover:text-white"); // Optionally remove hover effect when active
+  }
+}
 
 function groupByCategory(data) {
   return data.reduce((acc, item) => {
@@ -17,44 +34,35 @@ fetch(dataPath)
     const groupedData = groupByCategory(data);
     const menuContainer = document.getElementById("menu");
 
-    menuContainer.classList.add(
-      "flex",
-      "flex-wrap",
-      "gap-0",
-      "justify-center",
-      "items-start",
-      "py-0.5",
-      "rounded-lg",
-      "mx-auto",
-      "mt-0.5",
-      "px-0.5"
-    );
-    menuContainer.style.maxWidth = "1920px";
-
     Object.entries(groupedData).forEach(([category, items]) => {
       const categoryWrapper = document.createElement("div");
       categoryWrapper.classList.add("text-center", "mx-2");
 
       const button = document.createElement("button");
       button.innerText = category.toUpperCase();
-      button.classList.add(
-        "p-0.5",
-        "hover:text-white",
-        "focus:outline-none",
-        "text-xl",
-        "font-bold"
-      );
-
-      // Toggles dropdown visibility on click
-      button.onclick = function (event) {
-        event.preventDefault(); // Prevent the default button action
-        dropdown.classList.toggle("hidden"); // Toggle dropdown visibility
-      };
+      button.classList.add("p-0.5", "hover:text-white", "text-xl", "font-bold");
 
       const dropdown = document.createElement("div");
       dropdown.classList.add("hidden", "absolute", "mt-2", "z-50", "text-left");
 
-      // Populate dropdown items
+      button.onclick = function (event) {
+        event.preventDefault();
+        dropdown.classList.toggle("hidden");
+        if (dropdown.classList.contains("hidden")) {
+          setActiveButton(null); // No active button if the dropdown is closed
+        } else {
+          setActiveButton(button); // Set active button
+        }
+
+        if (currentOpenDropdown && currentOpenDropdown !== dropdown) {
+          currentOpenDropdown.classList.add("hidden");
+        }
+
+        currentOpenDropdown = dropdown.classList.contains("hidden")
+          ? null
+          : dropdown;
+      };
+
       items.forEach((item) => {
         const dropdownItem = document.createElement("a");
         dropdownItem.href = "#";
@@ -63,13 +71,15 @@ fetch(dataPath)
           "block",
           "px-0.5",
           "py-0.5",
-          "text-xl",
-          "hover:text-white"
+          "text-xs",
+          "hover:text-white",
         );
         dropdownItem.onclick = function (event) {
-          event.preventDefault(); // Prevent default anchor action
-          dropdown.classList.add("hidden"); // Close the dropdown
+          event.preventDefault();
+          dropdown.classList.add("hidden");
           toggleCategoryVisibility(category.toLowerCase(), item.title);
+          currentOpenDropdown = null;
+          setActiveButton(null); // Reset active button when item is selected
         };
 
         dropdown.appendChild(dropdownItem);
@@ -81,6 +91,14 @@ fetch(dataPath)
     });
   })
   .catch((error) => console.error("Error loading the data:", error));
+
+document.addEventListener("click", function (event) {
+  if (currentOpenDropdown && !event.target.closest(".text-center")) {
+    currentOpenDropdown.classList.add("hidden");
+    currentOpenDropdown = null;
+    setActiveButton(null); // Reset active button when clicking outside
+  }
+});
 
 function toggleCategoryVisibility(selectedCategory, selectedItemTitle) {
   const categories = document.querySelectorAll(".category-container");
