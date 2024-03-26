@@ -7,17 +7,22 @@ body {
 }
 
 body {
-  @apply bg-red-500 text-gray-800/75;
+  @apply bg-red-500 text-gray-800/75 subpixel-antialiased;
 }
 
 body.dark {
-  @apply bg-gray-800 text-white/75;
+  @apply bg-gray-800 text-white/75 subpixel-antialiased;
 }
 
-.menu-item:hover {
-  @apply text-blue-500;
+.button {
+  @apply bg-red-500
+   text-gray-800/75
+   hover:text-white/75
+   dark:bg-gray-800/75
+   dark:text-white/75
+   dark:hover:text-white/35;
 }
 
-body.dark .menu-item:hover {
-  @apply text-red-500;
+.shaka-play-button {
+  background-color: rgba(239, 68, 68, 0.7) !important;
 }

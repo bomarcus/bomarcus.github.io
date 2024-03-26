@@ -1,6 +1,8 @@
 //script.js
 import { initializeShakaPlayer } from "./shaka.js";
 import { initializeWaveSurfer } from "./wavesurfer.js";
+import { getAboutContent } from "./about.js";
+import { getAboutThisPageContent } from "./aboutthispage.js";
 
 let currentlyPlayingVideo = null;
 let currentlyPlayingAudio = null;
@@ -36,31 +38,48 @@ function createMediaSection(item, index) {
   section.id = `${item.category.toLowerCase()}_${index}`;
   section.setAttribute("data-title", item.title); // Add data-title attribute
 
-  const categoryTitle = document.createElement("h2");
-  categoryTitle.textContent = item.category;
-  // Tailwind CSS for text alignment and font styling
-  categoryTitle.className = "text-xl font-bold";
-  section.appendChild(categoryTitle);
+  //Category and title
+  // Create a new div to hold the category and title
+  const categoryTitleDiv = document.createElement("div");
+  // Tailwind CSS for flex layout and items alignment
+  categoryTitleDiv.className = "flex items-left";
 
-  const indexHeading = document.createElement("h2");
-  indexHeading.textContent = `${item.title}`;
-  // Tailwind CSS for text alignment and font styling
-  indexHeading.className = "text-xl font-bold";
-  section.appendChild(indexHeading);
+  const category = document.createElement("h2");
+  category.textContent = item.category;
+  // Tailwind CSS for text alignment, font styling, and italic text
+  category.className = "text-xl font-bold";
+  categoryTitleDiv.appendChild(category);
 
-  if (item.audioFormat) {
-    const audioFormat = document.createElement("p");
-    audioFormat.textContent = "Audio Format: " + item.audioFormat;
-    // Tailwind CSS for text styling
-    audioFormat.className = "text-base";
-    section.appendChild(audioFormat);
+  // Create a new element for the ">" sign
+  const separator = document.createElement("span");
+  separator.textContent = ">";
+  // Tailwind CSS for margin
+  separator.className = "mx-2 text-xl";
+  categoryTitleDiv.appendChild(separator);
+
+  const title = document.createElement("h2");
+  title.textContent = `${item.title}`;
+  // Tailwind CSS for text alignment and font styling
+  title.className = "text-xl font-bold text-center italic";
+  categoryTitleDiv.appendChild(title);
+
+  // Append the div to the section
+  section.appendChild(categoryTitleDiv);
+
+  //role
+  if (item.role) {
+    const role = document.createElement("p");
+    role.textContent = item.role.join(" / ");
+    // Tailwind CSS for text styling and button class
+    role.className = "button text-base mb-4";
+    section.appendChild(role);
   }
 
   if (item.subtitle) {
     const subtitle = document.createElement("p");
     subtitle.textContent = item.subtitle;
     // Tailwind CSS for text styling
-    subtitle.className = "text-base";
+    subtitle.className = "text-base text-center";
     section.appendChild(subtitle);
   }
 
@@ -68,42 +87,34 @@ function createMediaSection(item, index) {
     const description = document.createElement("p");
     description.textContent = item.description;
     // Tailwind CSS for text styling and top margin
-    description.className = "text-base mt-4";
+    description.className = "text-base mt-4 text-center";
     section.appendChild(description);
   }
 
   if (item.videoUrls && Array.isArray(item.videoUrls)) {
-    item.videoUrls.forEach((videoUrl) => {
+    item.videoUrls.forEach((video) => {
       const shakaVideo = document.createElement("video");
       shakaVideo.className = "shaka-player w-full"; // Tailwind CSS for width
-      const url = typeof videoUrl === "object" ? videoUrl.url : videoUrl;
+      const videoUrl = video.videoUrl;
 
-      if (typeof videoUrl === "object") {
-        const videoTitle = document.createElement("p");
-        videoTitle.textContent = videoUrl.videoTitle;
-        // Tailwind CSS for text alignment and styling
-        videoTitle.className = "text-center font-medium mt-4";
-        section.appendChild(videoTitle);
+      // Initialize Shaka Player with the video element and URL
+      initializeShakaPlayer(shakaVideo, videoUrl);
+      section.appendChild(shakaVideo);
 
-        shakaVideo.src = url;
-        section.appendChild(shakaVideo);
-
+      // Displaying video description
+      if (video.videoDescription) {
         const videoDescription = document.createElement("p");
-        videoDescription.textContent = videoUrl.videoDescription;
-        // Tailwind CSS for text alignment, styling, and italic font
-        videoDescription.className = "text-base text-center italic mt-3 ";
+        videoDescription.textContent = video.videoDescription;
+        videoDescription.className = "text-base text-center italic mt-3";
         section.appendChild(videoDescription);
+      }
 
+      // Displaying additional video information
+      if (video.videoMoreInfo) {
         const videoMoreInfo = document.createElement("p");
-        videoMoreInfo.textContent = videoUrl.videoMoreInfo;
-        // Tailwind CSS for text alignment
+        videoMoreInfo.textContent = video.videoMoreInfo;
         videoMoreInfo.className = "text-base text-center mt-2";
         section.appendChild(videoMoreInfo);
-
-        // Add a divider after each videoMoreInfo
-        const divider = document.createElement("hr");
-        divider.style.borderTop = "0.5px solid currentColor"; // Half the size and same color as the text
-        section.appendChild(divider);
       }
 
       shakaVideo.addEventListener("play", () => {
@@ -116,43 +127,52 @@ function createMediaSection(item, index) {
         currentlyPlayingVideo = shakaVideo;
       });
 
-      initializeShakaPlayer(shakaVideo, url);
+      initializeShakaPlayer(shakaVideo, videoUrl);
     });
   }
 
   if (item.audioUrls && Array.isArray(item.audioUrls)) {
-    item.audioUrls.forEach((audioUrl, audioIndex) => {
+    item.audioUrls.forEach((audio, audioIndex) => {
       const audioDiv = document.createElement("div");
-      audioDiv.className = "audio-player wavesurfer-container"; // No specific Tailwind CSS needed here
+      audioDiv.className = "audio-player wavesurfer-container";
       audioDiv.id = `audio-player-${index}-${audioIndex}`;
       section.appendChild(audioDiv);
 
-      const url = typeof audioUrl === "object" ? audioUrl.url : audioUrl;
+      const audioUrl = audio.audioUrl; // Use the updated field name
 
-      if (typeof audioUrl === "object") {
-        const audioDescription = document.createElement("p");
-        audioDescription.textContent = audioUrl.audioDescription;
-        // Tailwind CSS for text alignment and italic font
-        audioDescription.className = "text-center italic";
-        section.appendChild(audioDescription);
+      if (audioUrl) {
+        // Display audio description if available
+        if (audio.audioDescription) {
+          const audioDescriptionEl = document.createElement("p");
+          audioDescriptionEl.textContent = audio.audioDescription;
+          audioDescriptionEl.className = "text-base";
+          section.appendChild(audioDescriptionEl);
+        }
 
-        const audioMoreInfo = document.createElement("p");
-        audioMoreInfo.textContent = audioUrl.audioMoreInfo;
-        // Tailwind CSS for text alignment
-        audioMoreInfo.className = "text-center";
-        section.appendChild(audioMoreInfo);
+        // Display more info about the audio if available
+        if (audio.audioMoreInfo) {
+          const audioMoreInfoEl = document.createElement("p");
+          audioMoreInfoEl.textContent = audio.audioMoreInfo;
+          audioMoreInfoEl.className = "text-base italic";
+          section.appendChild(audioMoreInfoEl);
+        }
+        const wavesurfer = initializeWaveSurfer(audioDiv, audioUrl);
+
+        // Attach event listener for when the audio starts playing
+        wavesurfer.on("play", function () {
+          // console.log(`Playing audio ID: ${audioDiv.id} URL: ${audioUrl}`);
+          // Pause the currently playing video if any
+          if (currentlyPlayingVideo) {
+            currentlyPlayingVideo.pause();
+          }
+          // Pause any other currently playing audio, except the current instance
+          if (currentlyPlayingAudio && currentlyPlayingAudio !== wavesurfer) {
+            currentlyPlayingAudio.pause();
+          }
+          // Update the reference to the currently playing audio
+          currentlyPlayingAudio = wavesurfer;
+        });
       }
-
-      const wavesurfer = initializeWaveSurfer(audioDiv, url);
-      wavesurfer.on("play", function () {
-        if (currentlyPlayingVideo) {
-          currentlyPlayingVideo.pause();
-        }
-        if (currentlyPlayingAudio && currentlyPlayingAudio !== wavesurfer) {
-          currentlyPlayingAudio.pause();
-        }
-        currentlyPlayingAudio = wavesurfer;
-      });
     });
   }
 
@@ -178,33 +198,32 @@ function createMediaSection(item, index) {
     section.appendChild(text);
   }
 
-  // Add a divider at the bottom of each section
-  const divider = document.createElement("hr");
-  // Tailwind CSS for divider styling, adjust as needed
-  divider.className = "my-12 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10";
-  section.appendChild(divider);
-
   //info box
   if (item.info) {
     // Create a div to group the info elements
     const infoContainer = document.createElement("div");
-    infoContainer.className = "info-container"; // Add a class for styling
+    infoContainer.className = "info-container text-left pt-12"; // Add a class for styling
 
     // Iterate through each key in the info object
+    // Iterate through each key in the info object
+    // Iterate through each key in the info object
     Object.entries(item.info).forEach(([key, value], index, array) => {
-      if (value) {
-        // Check if value is not empty or not null
-        const infoElement = document.createElement("div"); // Change this to a div
-        infoElement.className = "flex border-b"; // Add flex and border-bottom
+      // Check if value is not empty, not null, not an empty array, and not an empty string
+      if (
+        value &&
+        !(Array.isArray(value) && value.length === 0) &&
+        value !== ""
+      ) {
+        const infoElement = document.createElement("div");
+        infoElement.className = "flex p-1";
 
         const keyElement = document.createElement("span");
         keyElement.innerHTML = `<strong>${key}:</strong>`;
-        keyElement.className = "w-32"; // Tailwind CSS for width
+        keyElement.className = "w-32";
 
         const valueElement = document.createElement("span");
 
         if (Array.isArray(value)) {
-          // If value is an array, create a list
           const list = document.createElement("ul");
           value.forEach((item) => {
             const listItem = document.createElement("li");
@@ -213,31 +232,38 @@ function createMediaSection(item, index) {
           });
           valueElement.appendChild(list);
         } else {
-          // If value is not an array, just append the value
           valueElement.textContent = value;
         }
 
         infoElement.appendChild(keyElement);
         infoElement.appendChild(valueElement);
         infoContainer.appendChild(infoElement);
-        // If it's not the last element, add a divider
-        if (index < array.length - 1) {
+
+        if (index !== array.length - 1) {
           const divider = document.createElement("hr");
-          divider.classList.add(
-            "my-12",
-            "h-0.5",
-            "border-t-0",
-            "bg-neutral-100",
-            "dark:bg-white/10",
-          );
-          section.appendChild(divider);
+          divider.className = "border-black/10 my-2 w-4/5";
           infoContainer.appendChild(divider);
-        } // Append to the infoContainer instead of the section
+        }
       }
     });
 
-    section.appendChild(infoContainer); // Append the infoContainer to the section
-  }
+    section.appendChild(infoContainer);
 
+    section.appendChild(infoContainer); // Append the infoContainer to the section
+
+    // Add a divider at the bottom of each section
+    const divider = document.createElement("hr");
+    // Tailwind CSS for divider styling, adjust as needed
+    divider.className = "my-6 h-1 border-t-0 bg-neutral-100 dark:bg-white/10";
+    section.appendChild(divider);
+  }
+  if (item.category.toLowerCase() === "about") {
+    const aboutContent = getAboutContent();
+    section.appendChild(aboutContent);
+  }
+  if (item.category.toLowerCase() === "about this page") {
+    const aboutThisPageContent = getAboutThisPageContent();
+    section.appendChild(aboutThisPageContent);
+  }
   categoryContainer.appendChild(section);
 }

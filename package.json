@@ -18,5 +18,10 @@
     "prettier-plugin-tailwindcss": "^0.5.12",
     "tailwindcss": "^3.4.1",
     "vite": "^5.1.6"
+  },
+  "dependencies": {
+    "audiomotion-analyzer": "^4.4.0",
+    "shaka-player": "^4.7.11",
+    "wavesurfer.js": "^7.7.5"
   }
 }

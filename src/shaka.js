@@ -1,5 +1,8 @@
 //shaka.js
 
+import shaka from "shaka-player/dist/shaka-player.ui.js";
+import "shaka-player/dist/controls.css";
+
 export function initializeShakaPlayer(videoElement, videoUrl) {
   if (shaka.Player.isBrowserSupported()) {
     const videoContainer = document.createElement("div");

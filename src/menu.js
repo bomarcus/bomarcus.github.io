@@ -1,31 +1,40 @@
 const dataPath = "data.json";
-let currentOpenDropdown = null; // Variable to keep track of the open dropdown
-let currentActiveButton = null; // Variable to keep track of the active button
+
+let currentActiveButton = null; // Tracks the active button
 
 function setActiveButton(button) {
-  // Reset the previously active button if there is one
+  // Clear previously active button
   if (currentActiveButton) {
-    currentActiveButton.classList.remove("bg-blue-500", "text-white"); // Adjust these classes as needed
-    currentActiveButton.classList.add("hover:text-white"); // Return hover effect
+    currentActiveButton.classList.remove("text-white");
+    currentActiveButton.classList.add("text-gray-800");
   }
 
-  // Set the new active button
   currentActiveButton = button;
+
+  // Highlight new active button
   if (currentActiveButton) {
-    currentActiveButton.classList.add("bg-blue-500", "text-white"); // Example classes for active state
-    currentActiveButton.classList.remove("hover:text-white"); // Optionally remove hover effect when active
+    currentActiveButton.classList.add("text-white");
+    currentActiveButton.classList.remove("text-gray-800");
   }
 }
 
-function groupByCategory(data) {
-  return data.reduce((acc, item) => {
-    const key = item.category || "uncategorized";
-    if (!acc[key]) {
-      acc[key] = [];
+function showAllCategoryItems(category) {
+  const categories = document.querySelectorAll(".category-container");
+  categories.forEach((cat) => {
+    cat.style.display =
+      cat.id.toLowerCase() === category.toLowerCase() ? "" : "none";
+
+    // If matching category, make all items visible
+    if (cat.id.toLowerCase() === category.toLowerCase()) {
+      const sections = cat.querySelectorAll("section");
+      sections.forEach((section) => (section.style.display = "")); // Make all sections visible
     }
-    acc[key].push(item);
-    return acc;
-  }, {});
+  });
+
+  // Highlight the category button
+  setActiveButton(
+    document.querySelector(`button[data-category='${category}']`),
+  );
 }
 
 fetch(dataPath)
@@ -35,85 +44,95 @@ fetch(dataPath)
     const menuContainer = document.getElementById("menu");
 
     Object.entries(groupedData).forEach(([category, items]) => {
-      const categoryWrapper = document.createElement("div");
-      categoryWrapper.classList.add("text-center", "mx-2");
-
       const button = document.createElement("button");
       button.innerText = category.toUpperCase();
-      button.classList.add("p-0.5", "hover:text-white", "text-xl", "font-bold");
+      button.dataset.category = category;
+      button.classList.add(
+        "button",
+        "p-2", //
+        "font-bold",
+      );
+
+      //@apply bg-red-500 text-gray-800/75;
+      // Click event to show all items in category
+      button.onclick = () => showAllCategoryItems(category);
 
       const dropdown = document.createElement("div");
-      dropdown.classList.add("hidden", "absolute", "mt-2", "z-50", "text-left");
+      dropdown.classList.add("hidden", "absolute", "z-10", "text-gray-800");
 
-      button.onclick = function (event) {
-        event.preventDefault();
-        dropdown.classList.toggle("hidden");
-        if (dropdown.classList.contains("hidden")) {
-          setActiveButton(null); // No active button if the dropdown is closed
-        } else {
-          setActiveButton(button); // Set active button
-        }
-
-        if (currentOpenDropdown && currentOpenDropdown !== dropdown) {
-          currentOpenDropdown.classList.add("hidden");
-        }
-
-        currentOpenDropdown = dropdown.classList.contains("hidden")
-          ? null
-          : dropdown;
-      };
-
+      // Populate dropdown items
       items.forEach((item) => {
         const dropdownItem = document.createElement("a");
         dropdownItem.href = "#";
         dropdownItem.innerText = item.title;
         dropdownItem.classList.add(
           "block",
-          "px-0.5",
-          "py-0.5",
-          "text-xs",
-          "hover:text-white",
+          "px-2",
+          "py-1",
+          "text-sm",
+          "button",
         );
-        dropdownItem.onclick = function (event) {
-          event.preventDefault();
-          dropdown.classList.add("hidden");
-          toggleCategoryVisibility(category.toLowerCase(), item.title);
-          currentOpenDropdown = null;
-          setActiveButton(null); // Reset active button when item is selected
-        };
 
         dropdown.appendChild(dropdownItem);
+
+        // Updated click event for dropdown items to include event.stopPropagation()
+        dropdownItem.onclick = function (event) {
+          event.preventDefault(); // Prevent the default anchor action
+          event.stopPropagation(); // Stop event from bubbling up
+
+          // Assuming 'category' is the correct category name for this item
+          toggleCategoryVisibility(category, item.title);
+        };
       });
 
-      categoryWrapper.appendChild(button);
-      categoryWrapper.appendChild(dropdown);
-      menuContainer.appendChild(categoryWrapper);
+      const container = document.createElement("div");
+      container.classList.add("relative", "inline-block");
+      container.appendChild(button);
+      container.appendChild(dropdown);
+
+      // Hover events to show/hide dropdown
+      container.onmouseenter = () => dropdown.classList.remove("hidden");
+      container.onmouseleave = () => dropdown.classList.add("hidden");
+
+      menuContainer.appendChild(container);
     });
   })
   .catch((error) => console.error("Error loading the data:", error));
 
-document.addEventListener("click", function (event) {
-  if (currentOpenDropdown && !event.target.closest(".text-center")) {
-    currentOpenDropdown.classList.add("hidden");
-    currentOpenDropdown = null;
-    setActiveButton(null); // Reset active button when clicking outside
-  }
-});
+function groupByCategory(data) {
+  return data.reduce((acc, item) => {
+    const key = item.category || "uncategorized";
+    if (!acc[key]) acc[key] = [];
+    acc[key].push(item);
+    return acc;
+  }, {});
+}
 
 function toggleCategoryVisibility(selectedCategory, selectedItemTitle) {
   const categories = document.querySelectorAll(".category-container");
   categories.forEach((category) => {
-    if (category.id.toLowerCase() === selectedCategory) {
-      category.style.display = "";
+    const isVisible =
+      category.id.toLowerCase() === selectedCategory.toLowerCase();
+    category.style.display = isVisible ? "" : "none";
+
+    if (isVisible) {
       const sections = category.querySelectorAll("section");
       sections.forEach((section) => {
-        section.style.display =
-          section.getAttribute("data-title") === selectedItemTitle
-            ? ""
-            : "none";
+        const isItemVisible =
+          section.getAttribute("data-title").toLowerCase() ===
+          selectedItemTitle.toLowerCase();
+        section.style.display = isItemVisible ? "" : "none";
       });
-    } else {
-      category.style.display = "none";
     }
   });
+
+  // Adjusting the logic here to ensure the right button is targeted
+  const categoryButton = document.querySelector(
+    `button[data-category="${selectedCategory}"]`,
+  );
+  if (categoryButton) {
+    setActiveButton(categoryButton);
+  } else {
+    console.error("Could not find category button for:", selectedCategory);
+  }
 }

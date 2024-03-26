@@ -1,26 +1,253 @@
 [
   {
-    "title": "3000",
-    "category": "IOS",
-    "tags": [],
-    "subtitle": "Interactive Music App",
-    "description": "User chose a  brush and draw on the screen with fingers to control the audio",
-    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "title": "Home",
+    "category": "HOME",
+    "tags": [
+      "Chroma",
+      "Sound Design",
+      "Mix",
+      "Short",
+      "Recording",
+      "Spatial Audio",
+      "Dolby Atmos"
+    ],
+    "production": "",
+    "format": "",
+    "subtitle": "",
+    "role": ["Recording", "Sound Design", "Mix"],
+    "description": "",
+    "more": "",
+    "language": "",
+    "websiteUrls": [""],
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [],
+    "videoDisplay": "",
+    "info": {
+      "for": "",
+      "at": "",
+      "i did": [],
+      "using": [],
+      "with": [],
+      "platform": "",
+      "year": "",
+      "audio format": "",
+      "delivery": "",
+      "language": ""
+    }
+  },
+  {
+    "title": "Ziba",
+    "category": "FILM",
+    "tags": [""],
+    "production": "SKH",
+    "subtitle": "",
+    "role": ["Recording", "Sound Design", "Mix"],
+    "description": "",
+    "more": "",
     "language": "",
     "imageUrl": "",
     "videoUrls": [
       {
-        "url": "https://storage.googleapis.com/maocloud/videos/3000/RPReplay_Final1696929676_HLS/RPReplay_Final1696929676_HLS.m3u8",
-        "videoDescription": "App store",
-        "videoMoreInfo": "More info here"
+        "videoUrl": "https://storage.googleapis.com/maocloud/videos/ZIBA_HLS/ZIBA_HLS.m3u8",
+        "videoDescription": "",
+        "videoMoreInfo": ""
+      }
+    ],
+    "audioUrls": [],
+    "info": {
+      "for": "Stockholm Univeristy of the Arts -  Examination Project",
+      "at": "",
+      "i did": [
+        "Pre-production",
+        "Location Recording",
+        "Sound Design",
+        "Dialogue Editing",
+        "Mix"
+      ],
+      "using": [
+        "Sound Devices 744",
+        "MKH-416",
+        "DPA 4071 + Lectrosonics wireless",
+        "Pro Tools"
+      ],
+      "with": [
+        "Therese Gylfe - Boom op",
+        "Jakob Lindhagen - Composer",
+        "Alireza Teimori - Director"
+      ],
+      "format": "Short film",
+      "platform": "Web, TV, Cinema",
+      "year": "2021",
+      "audio format": "Stereo, 5.1 Surround",
+      "delivery": "Swedish Public TV, Cinematic release",
+      "language": "Swedish, Dari"
+    }
+  },
+  {
+    "title": "Vällingbys Vänninor",
+    "category": "FILM",
+    "tags": [],
+    "production": "SKH",
+    "format": "",
+    "subtitle": "",
+    "role": ["Recording", "Sound Design", "Mix"],
+    "description": "",
+    "more": "",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "videoUrl": "https://storage.googleapis.com/maocloud/videos/VALLINGBY_HLS/VALLINGBY_HLS.m3u8",
+        "videoDescription": "",
+        "videoMoreInfo": ""
+      }
+    ],
+    "audioUrls": [],
+    "info": {
+      "for": "production company",
+      "at": "My studio Hornstull Stockholm",
+      "i did": ["Sound Design", "Dialogue Editing", "Mix"],
+      "using": ["Pro Tools"],
+      "with": [
+        "EliSophie Andrée and Helmi Tolonen - Writers",
+        "Elin Övergaard, Simon Elvås - Directors",
+        "Hanna Hannerz, Tove Myrne Widfors- Producers",
+        "Robin Trolin - Cinematographer",
+        "Moa Nyberg Waller - Editor"
+      ],
+      "format": "Short film",
+      "platform": "Web, TV, Cinema",
+      "year": "2021",
+      "audio format": "Stereo, 5.1 Surround",
+      "delivery": "Swedish Public TV, Cinematic release",
+      "language": "Swedish"
+    }
+  },
+  {
+    "title": "Epa",
+    "category": "FILM",
+    "tags": [],
+    "production": "prod",
+    "format": "FILM",
+    "subtitle": "",
+    "role": ["Sound Design", "Mix"],
+    "description": "",
+    "more": "",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "videoUrl": "https://storage.googleapis.com/maocloud/videos/Trafikverket/EPA_HLS/EPA_HLS.m3u8",
+        "videoDescription": "",
+        "videoMoreInfo": ""
+      }
+    ],
+    "audioUrls": [],
+    "info": {
+      "for": "A Very Cool Place AB",
+      "at": "My studio",
+      "i did": ["Sound Design", "Dialogue Editing", "Mix"],
+      "using": ["Pro Tools"],
+      "with": ["Simon Elvås - Director", "Engelbrekt Krantz - Producer"],
+      "format": "Short film",
+      "platform": "Web",
+      "year": "2023",
+      "audio format": "Stereo",
+      "delivery": "Web",
+      "language": "Swedish"
+    }
+  },
+  {
+    "title": "Korvkiosken",
+    "category": "FILM",
+    "tags": [],
+    "production": "",
+    "format": "FILM",
+    "subtitle": "",
+    "role": ["Recording", "Sound Design", "Mix"],
+    "description": "sound",
+    "more": "",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "videoUrl": "https://storage.googleapis.com/maocloud/videos/Trafikverket/KORVKIOSKEN_HLS/KORVKIOSKEN_HLS.m3u8",
+        "videoDescription": "Korvkiosken",
+        "videoMoreInfo": "Dialogue edit mix etc"
+      }
+    ],
+    "audioUrls": [],
+    "info": {
+      "for": "A Very Cool Place AB",
+      "at": "My studio",
+      "i did": ["Dialogue Editing", "Sound Design", "Mix"],
+      "using": ["Pro Tools"],
+      "with": ["Simon Elvås - Director", "Engelbrekt Krantz - Producer"],
+      "format": "Short film",
+      "platform": "Web",
+      "year": "2023",
+      "audio format": "Stereo",
+      "delivery": "Web",
+      "language": "Swedish"
+    }
+  },
+  {
+    "title": "Krogsr",
+    "category": "FILM",
+    "tags": [],
+    "production": "",
+    "subtitle": "",
+    "role": ["Dialogue Edit", "Sound Design", "Mix"],
+    "description": "",
+    "more": "",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "videoUrl": "https://storage.googleapis.com/maocloud/videos/KROGSR_HLS/KROGSR_HLS.m3u8",
+        "videoDescription": "",
+        "videoMoreInfo": ""
+      }
+    ],
+    "audioUrls": [],
+    "info": {
+      "for": "Alessandro Berellini and Robin Risberg",
+      "at": "My studio Hornstull",
+      "i did": ["Sound Design", "Dialogue Editing", "Mix"],
+      "using": ["Pro Tools"],
+      "with": ["Robin Risberg & Alessandro Berellini - Writers and Directors"],
+      "format": "Short film",
+      "platform": "Web",
+      "year": "2023",
+      "audio format": "Stereo",
+      "delivery": "Web",
+      "language": "Swedish"
+    }
+  },
+  {
+    "title": "3000",
+    "category": "IOS",
+    "tags": [],
+    "subtitle": "Interactive Music App",
+    "description": "User controlled audio mixer.",
+    "role": ["Sound Design", "Composition", "Mixing", "Development"],
+    "more": "",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "videoUrl": "https://storage.googleapis.com/maocloud/videos/3000/RPReplay_Final1696929676_HLS/RPReplay_Final1696929676_HLS.m3u8",
+        "videoDescription": "Final product App store",
+        "videoMoreInfo": "Bronze Composer Logic Pro an in house osc-tools for testing the controls. Endless looping music that user can control by selecting a brush and draw on the canvas."
       },
       {
-        "url": "https://storage.googleapis.com/maocloud/videos/3000/Johan_reff_5_sfx_HLS/Johan_reff_5_sfx_HLS.m3u8",
+        "videoUrl": "https://storage.googleapis.com/maocloud/videos/3000/Johan_reff_5_sfx_HLS/Johan_reff_5_sfx_HLS.m3u8",
         "videoDescription": "Development versions made in p5js and tonejs and combined by Johan Wik.",
-        "videoMoreInfo": "More info here"
+        "videoMoreInfo": "p5js and tonejs"
       },
       {
-        "url": "https://storage.googleapis.com/maocloud/videos/3000/TRIP_HLS/TRIP_HLS.m3u8",
+        "videoUrl": "https://storage.googleapis.com/maocloud/videos/3000/TRIP_HLS/TRIP_HLS.m3u8",
         "videoDescription": "Internal presentation",
         "videoMoreInfo": "More info here"
       }
@@ -30,8 +257,8 @@
       "for": "",
       "at": "Chroma Studios AB",
       "i did": [
-        "sound design",
-        "audiokit signal chain setup",
+        "Sound Design",
+        "Audiokit Signal-chain-setup",
         "chat-gpt-code-prompting",
         "try to hone webaudio"
       ],
@@ -40,10 +267,10 @@
         "Logic Pro X",
         "Bronze Composer",
         "In-house osc-tool",
-        "XCode",
+        "Xcode",
         "p5js",
         "tone.js",
-        "chat-gpt"
+        "Chat-GPT"
       ],
       "with": [
         "Andreas Pihlström",
@@ -64,6 +291,272 @@
       "language": ""
     }
   },
+
+  {
+    "title": "EZPZ",
+    "category": "IOS",
+    "tags": [],
+    "production": "",
+    "format": "",
+    "subtitle": "Placeholder subtitle",
+    "role": ["Mix", "Video optimization"],
+    "description": "Social media posts",
+    "more": "",
+    "language": "",
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [
+      {
+        "videoUrl": "https://storage.googleapis.com/maocloud/videos/EZPZ_IG_1_HLS/EZPZ_IG_1_HLS.m3u8",
+        "videoDescription": "Instagram",
+        "videoMoreInfo": "Video optimization social media"
+      },
+      {
+        "videoUrl": "https://storage.googleapis.com/maocloud/videos/EZPZ_YT_1_1_HLS/EZPZ_YT_1_1_HLS.m3u8",
+        "videoDescription": "Youtube ad with Cari Lekebusch",
+        "videoMoreInfo": "Mix"
+      }
+    ],
+    "info": {
+      "for": "Chroma Studios AB",
+      "at": "",
+      "i did": [
+        "Sound Design",
+        "social media optimization",
+        "mix",
+        "remote collaboration recording sessions"
+      ],
+      "using": ["Pro Tools", "ffmpeg", "apple compressor", "Davinci Resolve"],
+      "with": ["Chroma Team"],
+      "platform": "IOS, Web",
+      "year": "2023",
+      "audio format": "stereo",
+      "delivery": "IOS",
+      "language": "English"
+    }
+  },
+  {
+    "title": "Alive",
+    "category": "IOS",
+    "tags": [],
+    "production": "",
+    "format": "",
+    "subtitle": "Seamless social media loops",
+    "description": "Unreal Engine live feed Bronze Composer",
+    "more": "",
+
+    "language": "sv",
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [
+      {
+        "videoUrl": "https://storage.googleapis.com/maocloud/videos/ALIVE_IG_1_1_HLS/ALIVE_IG_1_1_HLS.m3u8",
+        "videoDescription": "Instagram",
+        "videoMoreInfo": "HLS variants made by apple compressor"
+      },
+      {
+        "videoUrl": "https://storage.googleapis.com/maocloud/videos/ALIVE_YT_1_HLS/ALIVE_YT_1_HLS.m3u8",
+        "videoDescription": "youtube",
+        "videoMoreInfo": "HLS variants made by apple compressor"
+      }
+    ],
+    "info": {
+      "for": "Chroma Studios AB",
+      "at": "",
+      "i did": ["Seamless Video Loops", "Social media optimization"],
+      "using": ["Pro Tools", "ffmpeg", "Davinci Resolve"],
+      "with": ["Chroma Team"],
+      "platform": "IOS, Web",
+      "year": "2023",
+      "audio format": "Stereo",
+      "delivery": "IOS",
+      "language": "English"
+    }
+  },
+  {
+    "title": "Wipeout",
+    "category": "IOS",
+    "tags": [],
+    "production": "",
+    "format": "",
+    "subtitle": "Interview with Ian Anderson",
+    "role": ["Mixing"],
+    "description": "",
+    "more": "",
+    "language": "",
+    "websiteUrls": [""],
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [
+      {
+        "videoUrl": "https://storage.googleapis.com/maocloud/wipeout_compressor/wipeout_hls.m3u8",
+        "videoDescription": "Wipeout ",
+        "videoMoreInfo": "Dolby Atmos in apple systems."
+      }
+    ],
+    "info": {
+      "for": "Chroma",
+      "at": "Chroma",
+      "i did": ["Sound Design", "Dialogue Editing", "Mix", "HLS"],
+      "using": ["Pro Tools", "Dolby Atmos Renderer"],
+      "with": ["Johan Wik", "Edvard Stokstad"],
+      "platform": "Ios",
+      "year": "2023",
+      "audio format": "Dolby Atmos, eac3joc, stereo",
+      "delivery": "Ios",
+      "language": "Wipeout"
+    }
+  },
+  {
+    "title": "Directing Danny",
+    "category": "IOS",
+    "tags": [],
+    "production": "",
+    "format": "",
+    "subtitle": "Interview with Ian Anderson",
+    "role": ["Mixing"],
+    "description": "",
+    "more": "",
+    "language": "",
+    "websiteUrls": [""],
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [
+      {
+        "videoUrl": "",
+        "videoDescription": "Directing Danny ",
+        "videoMoreInfo": "Dolby Atmos in apple systems."
+      }
+    ],
+    "info": {
+      "for": "Chroma",
+      "at": "Chroma",
+      "i did": [""],
+      "using": ["Pro Tools", "Dolby Atmos Renderer"],
+      "with": [""],
+      "platform": "Ios",
+      "year": "2023",
+      "audio format": "",
+      "delivery": "Ios",
+      "language": ""
+    }
+  },
+
+  {
+    "title": "3000",
+    "category": "MUSIC",
+    "tags": [],
+    "production": "",
+    "format": "",
+    "subtitle": "",
+    "description": "",
+    "more": "",
+    "language": "",
+    "websiteUrls": [],
+    "imageUrl": "",
+    "audioUrls": [
+      {
+        "audioUrl": "https://storage.googleapis.com/maocloud/audio/akvarium_whatislife_1.wav",
+        "audioDescription": "Akvarium wav",
+        "audioMoreInfo": "test for project"
+      },
+      {
+        "audioUrl": "https://storage.googleapis.com/maocloud/audio/akvarium_whatislife_1.m4a",
+        "audioDescription": "Akvarium AAC",
+        "audioMoreInfo": "test for project"
+      }
+    ],
+    "videoUrls": [],
+    "info": {
+      "for": "",
+      "at": "Chroma Studios AB",
+      "i did": [],
+      "using": ["Pro Tools", "Logic Pro X"],
+      "with": [],
+      "platform": "",
+      "year": "2023",
+      "audio format": "stereo",
+      "delivery": "",
+      "language": ""
+    }
+  },
+
+  {
+    "title": "waveform audioplayer",
+    "category": "EXPERIMENTAL",
+    "tags": [],
+    "subtitle": "Customizible waveform visualizer",
+    "description": "Create a weird waveform visualizer. I wanted to create a waveform visualizer for this page. the controls are for being able to set the look of the player and wouldnt be used in final usage.",
+    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "language": "",
+    "imageUrl": "temp_media/wip_projects/waveform_figma.png",
+    "videoUrls": [
+      {
+        "videoUrl": "temp_media/wip_projects/V1-0001_audioplayer_p5js_mo_1.mp4",
+        "videoDescription": "wip",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "videoUrl": "temp_media/wip_projects/waveform_player/V1-0002_audioplayer_p5js_mo_2.mp4  ",
+        "videoDescription": "Development versions made in p5js and tonejs and combined by Johan Wik.",
+        "videoMoreInfo": "More info here"
+      }
+    ],
+    "audioUrls": [],
+    "info": {
+      "for": "",
+      "at": "Chroma Studios AB",
+      "i did": ["code-prompting"],
+      "using": ["Chat-Gtp", "Github Copilot"],
+      "with": [],
+      "platform": "web",
+      "year": "2023/2024",
+      "audio format": "",
+      "delivery": "",
+      "language": ""
+    }
+  },
+  {
+    "title": "audio reactive particles",
+    "category": "EXPERIMENTAL",
+    "tags": [],
+    "subtitle": "audio reactive particles",
+    "description": "forces and an invisible ball",
+    "more": "",
+    "language": "",
+    "imageUrl": "",
+    "videoUrls": [
+      {
+        "videoUrl": "temp_media/wip_projects/audioviz/V1-0003_audioplayer_p5js_mo_3.mp4",
+        "videoDescription": "wip",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "videoUrl": "temp_media/wip_projects/audioviz/V1-0004_audioplayer_p5js_mo_5.mp4",
+        "videoDescription": "Development versions made in p5js and tonejs and combined by Johan Wik.",
+        "videoMoreInfo": "More info here"
+      },
+      {
+        "videoUrl": "temp_media/wip_projects/audioviz/V1-0005_audioplayer_p5js_mo_4.mp4",
+        "videoDescription": "Development versions made in p5js and tonejs and combined by Johan Wik.",
+        "videoMoreInfo": "More info here"
+      }
+    ],
+    "audioUrls": [],
+    "info": {
+      "for": "",
+      "at": "",
+      "i did": ["code-prompting"],
+      "using": ["Chat-Gtp", "Github Copilot", "p5js", "tone.js"],
+      "with": [],
+      "platform": "web",
+      "year": "2023/2024",
+      "audio format": "",
+      "delivery": "",
+      "language": ""
+    }
+  },
+
   {
     "title": "own",
     "category": "EXPERIMENTAL",
@@ -71,7 +564,6 @@
     "production": "",
     "format": "",
     "subtitle": "",
-    "audioFormat": "",
     "description": "",
     "more": "",
     "language": "",
@@ -81,47 +573,14 @@
     "videoUrls": [],
     "videoDisplay": "row"
   },
-  {
-    "title": "Home",
-    "category": "HOME",
-    "tags": [
-      "Chroma",
-      "Sound Design",
-      "Mix",
-      "Short",
-      "Recording",
-      "Spatial Audio",
-      "Dolby Atmos"
-    ],
-    "production": "",
-    "format": "",
-    "subtitle": "",
-    "audioFormat": "stereo",
-    "description": "",
-    "more": "",
-    "language": "",
-    "websiteUrls": [""],
-    "imageUrl": "",
-    "audioUrls": [],
-    "videoUrls": [],
-    "videoDisplay": "row"
-  },
+
   {
     "title": "Wip own",
     "category": "EXPERIMENTAL",
-    "tags": [
-      "Chroma",
-      "Sound Design",
-      "Mix",
-      "Short",
-      "Recording",
-      "Spatial Audio",
-      "Dolby Atmos"
-    ],
+    "tags": [],
     "production": "",
     "format": "",
     "subtitle": "",
-    "audioFormat": "stereo",
     "description": "",
     "more": "",
     "language": "",
@@ -132,21 +591,12 @@
     "videoDisplay": "row"
   },
   {
-    "title": "me",
+    "title": "",
     "category": "ABOUT",
-    "tags": [
-      "Chroma",
-      "Sound Design",
-      "Mix",
-      "Short",
-      "Recording",
-      "Spatial Audio",
-      "Dolby Atmos"
-    ],
+    "tags": [],
     "production": "",
     "format": "",
     "subtitle": "",
-    "audioFormat": "stereo",
     "description": "",
     "more": "",
     "language": "",
@@ -157,173 +607,12 @@
     "text": ""
   },
   {
-    "title": "3000",
-    "category": "MUSIC",
-    "tags": [
-      "Chroma",
-      "Sound Design",
-      "Mix",
-      "Short",
-      "Recording",
-      "Spatial Audio",
-      "Dolby Atmos"
-    ],
-    "production": "",
-    "format": "",
-    "subtitle": "",
-    "audioFormat": "stereo",
-    "description": "",
-    "more": "",
-    "language": "",
-    "websiteUrls": [],
-    "imageUrl": "",
-    "audioUrls": [
-      {
-        "url": "https://storage.googleapis.com/maocloud/audio/akvarium_whatislife_1.wav",
-        "audioDescription": "Akvarium",
-        "audioMoreInfo": "i amske sjnjsdn music esitng jndkdjfn"
-      }
-    ],
-    "videoUrls": []
-  },
-
-  {
-    "title": "EZPZ",
-    "category": "IOS",
-    "tags": [
-      "Chroma",
-      "Sound Design",
-      "Mix",
-      "Short",
-      "Recording",
-      "Spatial Audio",
-      "Dolby Atmos"
-    ],
-    "production": "Chroma",
-    "format": "IOS",
-    "subtitle": "Placeholder subtitle",
-    "audioFormat": "stereo",
-    "description": "sound",
-    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
-    "language": "sv",
-    "imageUrl": "",
-    "audioUrls": [],
-    "videoUrls": [
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/EZPZ_IG_1_HLS/EZPZ_IG_1_HLS.m3u8",
-        "videoDescription": "Instagram",
-        "videoMoreInfo": "More info here"
-      },
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/EZPZ_YT_1_1_HLS/EZPZ_YT_1_1_HLS.m3u8",
-        "videoDescription": "youtube",
-        "videoMoreInfo": "More info here"
-      }
-    ]
-  },
-  {
-    "title": "Alive",
-    "category": "IOS",
-    "tags": [
-      "Chroma",
-      "Sound Design",
-      "Mix",
-      "Short",
-      "Recording",
-      "Spatial Audio",
-      "Dolby Atmos"
-    ],
-    "production": "Chroma",
-    "format": "IOS",
-    "subtitle": "Placeholder subtitle",
-    "audioFormat": "Dolby Atmos eac3joc",
-    "description": "sound",
-    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
-
-    "language": "sv",
-    "imageUrl": "",
-    "audioUrls": [],
-    "videoUrls": [
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/ALIVE_IG_1_1_HLS/ALIVE_IG_1_1_HLS.m3u8",
-        "videoDescription": "instagram",
-        "videoMoreInfo": "HLS variants made by apple compressor"
-      },
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/ALIVE_YT_1_HLS/ALIVE_YT_1_HLS.m3u8",
-        "videoDescription": "youtube",
-        "videoMoreInfo": "HLS variants made by apple compressor"
-      }
-    ]
-  },
-  {
-    "title": "Unreal",
-    "category": "DEVELOPMENT",
-    "tags": [
-      "Chroma",
-      "Sound Design",
-      "Mix",
-      "Short",
-      "Recording",
-      "Spatial Audio",
-      "Dolby Atmos"
-    ],
-    "production": "",
-    "format": "",
-    "subtitle": "",
-    "audioFormat": "stereo",
-    "description": "",
-    "more": "",
-    "language": "",
-    "websiteUrls": [""],
-    "imageUrl": "",
-    "audioUrls": [
-      {
-        "url": "https://storage.googleapis.com/maocloud/wipeout_compressor/wipeout_hls.m3u8",
-        "audioDescription": "Your description here",
-        "audioMoreInfo": "More info here"
-      }
-    ],
-    "videoUrls": []
-  },
-  {
-    "title": "Dolby Atmos",
-    "category": "IOS",
-    "tags": [
-      "Chroma",
-      "Sound Design",
-      "Mix",
-      "Short",
-      "Recording",
-      "Spatial Audio",
-      "Dolby Atmos"
-    ],
-    "production": "",
-    "format": "",
-    "subtitle": "",
-    "audioFormat": "stereo",
-    "description": "",
-    "more": "",
-    "language": "",
-    "websiteUrls": [""],
-    "imageUrl": "",
-    "audioUrls": [
-      {
-        "url": "https://storage.googleapis.com/maocloud/wipeout_compressor/wipeout_hls.m3u8",
-        "audioDescription": "Your description here",
-        "audioMoreInfo": "More info here"
-      }
-    ],
-    "videoUrls": []
-  },
-  {
-    "title": "contact",
-    "category": "CONTACT",
+    "title": "",
+    "category": "ABOUT THIS PAGE",
     "tags": [],
     "production": "",
     "format": "",
     "subtitle": "",
-    "audioFormat": "stereo",
     "description": "",
     "more": "",
     "language": "",
@@ -331,120 +620,62 @@
     "imageUrl": "",
     "audioUrls": [],
     "videoUrls": [],
-    "text": "<p>Stockholm</p>\n<p>0734166034</p>\n<p>bomarcusohlsson@gmail.com</p>"
-  },
-  {
-    "title": "Krogisar",
-    "category": "FILM",
-    "tags": [
-      "Chroma",
-      "Sound Design",
-      "Mix",
-      "Recording",
-      "Spatial Audio",
-      "Dolby Atmos"
-    ],
-    "production": "bolagsnamn",
-    "format": "FILM",
-    "subtitle": "subtitle",
-    "audioFormat": "stereo",
-    "description": "sound",
-    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
-    "language": "",
-    "imageUrl": "",
-    "videoUrls": [
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/KROGSR_HLS/KROGSR_HLS.m3u8",
-        "videoDescription": "Krogisar",
-        "videoMoreInfo": "Short"
-      }
-    ],
-    "audioUrls": [],
-    "info": {
-      "for": "production company",
-      "at": "my studio",
-      "i did": ["sound design", "dialogue editing", "mix"],
-      "using": ["Pro Tools"],
-      "with": ["Simon Elvås (director)"],
-      "platform": "ios",
-      "year": "2023",
-      "audio format": "stereo",
-      "delivery": "ios",
-      "language": ""
-    }
+    "text": ""
   },
 
   {
-    "title": "Vällingbys Vänninor",
-    "category": "FILM",
-    "tags": ["Sound Design", "Mix", "dialogue editing"],
-    "production": "SKH",
-    "format": "FILM",
-    "subtitle": "subtitle",
-    "audioFormat": "stereo",
-    "description": "sound",
-    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "title": "contact",
+    "category": "CONTACT",
+    "tags": [],
+    "production": "",
+    "format": "",
+    "subtitle": "",
+    "description": "",
+    "more": "",
+    "language": "",
+    "websiteUrls": [""],
+    "imageUrl": "",
+    "audioUrls": [],
+    "videoUrls": [],
+    "text": "<p>Stockholm</p>\n<p>0734166034</p>\n<p><a href='mailto:bomarcusohlsson@gmail.com'>bomarcusohlsson@gmail.com</a></p>\n<p><a>https://www.linkedin.com/in/marcus-ohlsson-7b6769190/</a></p>"
+  },
+
+  {
+    "title": "ChromaWorld",
+    "category": "Development",
+    "tags": [],
+    "production": "",
+    "format": "",
+    "subtitle": "interactive soundscape",
+    "role": ["Multi-Tooling"],
+    "description": "",
+    "more": "",
     "language": "",
     "imageUrl": "",
     "videoUrls": [
       {
-        "url": "https://storage.googleapis.com/maocloud/videos/VALLINGBY_HLS/VALLINGBY_HLS.m3u8",
-        "videoDescription": "Vällingbys Vänninor",
+        "videoUrl": "https://storage.googleapis.com/maocloud/videos/unreal_chromaworld_mo_HLS/unreal_chromaworld_mo_HLS.m3u8",
+        "videoDescription": "Unreal Engine",
         "videoMoreInfo": "More info here"
       }
     ],
     "audioUrls": [],
     "info": {
-      "for": "production company",
-      "at": "my studio",
-      "i did": ["sound design", "dialogue editing", "mix"],
-      "using": ["Pro Tools"],
-      "with": ["Simon Elvås (director)"],
-      "platform": "ios",
+      "for": "Chroma Studios AB",
+      "at": "",
+      "i did": ["Sound Design", "Unreal Engening"],
+      "using": ["Pro Tools", "Unreal Engine", "FMOD"],
+      "with": ["Johan Wik"],
+      "platform": "",
       "year": "2023",
-      "audio format": "stereo",
-      "delivery": "ios",
+      "audio format": "",
+      "delivery": "",
       "language": ""
     }
   },
-
   {
-    "title": "Korvkiosken",
-    "category": "FILM",
-    "tags": ["Sound Design", "Mix"],
-    "production": "bolagsnamn",
-    "format": "FILM",
-    "subtitle": "subtitle",
-    "audioFormat": "stereo",
-    "description": "sound",
-    "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
-    "language": "",
-    "imageUrl": "",
-    "videoUrls": [
-      {
-        "url": "https://storage.googleapis.com/maocloud/videos/Trafikverket/KORVKIOSKEN_HLS/KORVKIOSKEN_HLS.m3u8",
-        "videoDescription": "Korvkiosken",
-        "videoMoreInfo": "Dialogue edit mix etc"
-      }
-    ],
-    "audioUrls": [],
-    "info": {
-      "for": "production company",
-      "at": "my studio",
-      "i did": ["sound design", "dialogue editing", "mix"],
-      "using": ["Pro Tools"],
-      "with": ["Simon Elvås (director)"],
-      "platform": "ios",
-      "year": "2023",
-      "audio format": "stereo",
-      "delivery": "ios",
-      "language": ""
-    }
-  },
-
-  {
-    "title": "Epa",
-    "category": "FILM",
+    "title": "Pick-Up",
+    "category": "SOUND DESIGN",
     "tags": [
       "Chroma",
       "Sound Design",
@@ -456,14 +687,13 @@
     "production": "prod",
     "format": "FILM",
     "subtitle": "subtitle",
-    "audioFormat": "stereo",
     "description": "sound",
     "more": "Lorem Ipsum has been the industry's standard dummy text ever since.",
     "language": "",
     "imageUrl": "",
     "videoUrls": [
       {
-        "url": "https://storage.googleapis.com/maocloud/videos/Trafikverket/EPA_HLS/EPA_HLS.m3u8",
+        "videoUrl": "https://storage.googleapis.com/maocloud/audio/pick_up_v09_freric_blackvideo_HLS/pick_up_v09_freric_blackvideo_HLS.m3u8",
         "videoDescription": "Epa",
         "videoMoreInfo": "More info here"
       }
