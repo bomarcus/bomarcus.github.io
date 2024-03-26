@@ -3,6 +3,7 @@ import { initializeShakaPlayer } from "./shaka.js";
 import { initializeWaveSurfer } from "./wavesurfer.js";
 import { getAboutContent } from "./about.js";
 import { getAboutThisPageContent } from "./aboutthispage.js";
+import { addClickListener } from "./filter.js"; // Import the function
 
 let currentlyPlayingVideo = null;
 let currentlyPlayingAudio = null;
@@ -21,6 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error loading JSON:", error);
       console.log("Failed to load some videos due to the above error.");
     });
+
+  const homeButton = document.querySelector(
+    'button[aria-label="Bo Marcus Ohlsson"]',
+  );
+  if (homeButton) {
+    homeButton.addEventListener("click", () => {
+      location.reload();
+    });
+  }
 });
 
 function createMediaSection(item, index) {
@@ -46,9 +56,10 @@ function createMediaSection(item, index) {
 
   const category = document.createElement("h2");
   category.textContent = item.category;
-  // Tailwind CSS for text alignment, font styling, and italic text
-  category.className = "text-xl font-bold";
+  category.className = "text-xl font-bold button"; // Add the "button" class
+  category.dataset.category = item.category; // Add data-category attribute
   categoryTitleDiv.appendChild(category);
+  addClickListener(category, true); // Add click listener
 
   // Create a new element for the ">" sign
   const separator = document.createElement("span");
@@ -68,11 +79,14 @@ function createMediaSection(item, index) {
 
   //role
   if (item.role) {
-    const role = document.createElement("p");
-    role.textContent = item.role.join(" / ");
-    // Tailwind CSS for text styling and button class
-    role.className = "button text-base mb-4";
-    section.appendChild(role);
+    item.role.forEach((roleText) => {
+      const role = document.createElement("p");
+      role.textContent = roleText;
+      role.className = "button text-base mb-4";
+      role.dataset.role = roleText; // Add data-role attribute
+      section.appendChild(role);
+      addClickListener(role, false); // Add click listener
+    });
   }
 
   if (item.subtitle) {

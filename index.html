@@ -22,12 +22,15 @@
 
 <body>
     <div id="Header" class="text-center p-0.5">
-        <button id="dark-mode-toggle" class="button">
+        <button id="dark-mode-toggle" class="button mb-2 mx-auto">
             <span class="material-icons-outlined" id="light-mode-icon"
                 style="display: none;">radio_button_unchecked</span>
             <span class="material-icons-outlined" id="dark-mode-icon">dark_mode</span>
         </button>
-        <h1 class="text-3xl font-bungee mt-0.5">Bo Marcus Ohlsson</h1>
+        <br>
+        <button class="text-3xl font-bungee" aria-label="Bo Marcus Ohlsson">Bo Marcus Ohlsson</button>
+
+
         <div class="text-xs mt-0.5 text-base">
             <h2>Sound Everything</h2>
             <p>Golden Hits - Doom scrolling extravaganza.</p>
@@ -85,9 +88,11 @@
 
     <!-- index.html -->
     <script type="module" src="src/menu.js"></script>
+
     <script type="module" src="src/shaka.js"></script>
     <script type="module" src="src/wavesurfer.js"></script>
     <script type="module" src="src/script.js"></script>
+    <script type="module" src="src/filter.js"></script>
     <script type="module" src="src/dropdown.js"></script>
     <script type="module" src="src/darkmode.js"></script>
 </body>
